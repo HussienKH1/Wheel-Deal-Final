@@ -70,6 +70,10 @@
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton10 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton11 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -96,6 +100,10 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton12);
+            this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton11);
+            this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton10);
+            this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton9);
             this.guna2GradientPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Black;
@@ -130,6 +138,7 @@
             // 
             // guna2GradientButton6
             // 
+            this.guna2GradientButton6.Animated = true;
             this.guna2GradientButton6.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton6.BorderRadius = 20;
             this.guna2GradientButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -143,12 +152,15 @@
             this.guna2GradientButton6.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton6.Location = new System.Drawing.Point(32, 272);
             this.guna2GradientButton6.Name = "guna2GradientButton6";
+            this.guna2GradientButton6.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GradientButton6.Size = new System.Drawing.Size(107, 45);
             this.guna2GradientButton6.TabIndex = 9;
             this.guna2GradientButton6.Text = "Buy Now";
             // 
             // guna2GradientButton7
             // 
+            this.guna2GradientButton7.Animated = true;
             this.guna2GradientButton7.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton7.BorderRadius = 20;
             this.guna2GradientButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -162,6 +174,8 @@
             this.guna2GradientButton7.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton7.Location = new System.Drawing.Point(32, 323);
             this.guna2GradientButton7.Name = "guna2GradientButton7";
+            this.guna2GradientButton7.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GradientButton7.Size = new System.Drawing.Size(107, 45);
             this.guna2GradientButton7.TabIndex = 8;
             this.guna2GradientButton7.Text = "Rent Now";
@@ -216,6 +230,7 @@
             // 
             // guna2GradientButton4
             // 
+            this.guna2GradientButton4.Animated = true;
             this.guna2GradientButton4.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton4.BorderRadius = 20;
             this.guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -229,6 +244,8 @@
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton4.Location = new System.Drawing.Point(37, 313);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
+            this.guna2GradientButton4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GradientButton4.Size = new System.Drawing.Size(180, 45);
             this.guna2GradientButton4.TabIndex = 6;
             this.guna2GradientButton4.Text = "Buy Now";
@@ -283,6 +300,7 @@
             // 
             // guna2GradientButton5
             // 
+            this.guna2GradientButton5.Animated = true;
             this.guna2GradientButton5.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton5.BorderRadius = 20;
             this.guna2GradientButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -296,6 +314,8 @@
             this.guna2GradientButton5.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton5.Location = new System.Drawing.Point(42, 313);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
+            this.guna2GradientButton5.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GradientButton5.Size = new System.Drawing.Size(180, 45);
             this.guna2GradientButton5.TabIndex = 7;
             this.guna2GradientButton5.Text = "Rent Now";
@@ -351,6 +371,7 @@
             // 
             // guna2GradientButton1
             // 
+            this.guna2GradientButton1.Animated = true;
             this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.BorderRadius = 20;
             this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -364,6 +385,8 @@
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.Location = new System.Drawing.Point(32, 324);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
             this.guna2GradientButton1.TabIndex = 5;
             this.guna2GradientButton1.Text = "Rent Now";
@@ -428,6 +451,7 @@
             // 
             // guna2GradientButton3
             // 
+            this.guna2GradientButton3.Animated = true;
             this.guna2GradientButton3.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton3.BorderRadius = 20;
             this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -441,12 +465,15 @@
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton3.Location = new System.Drawing.Point(67, 273);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
+            this.guna2GradientButton3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GradientButton3.Size = new System.Drawing.Size(107, 45);
             this.guna2GradientButton3.TabIndex = 7;
             this.guna2GradientButton3.Text = "Buy Now";
             // 
             // guna2GradientButton2
             // 
+            this.guna2GradientButton2.Animated = true;
             this.guna2GradientButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton2.BorderRadius = 20;
             this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -460,6 +487,8 @@
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton2.Location = new System.Drawing.Point(67, 324);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GradientButton2.Size = new System.Drawing.Size(107, 45);
             this.guna2GradientButton2.TabIndex = 6;
             this.guna2GradientButton2.Text = "Rent Now";
@@ -514,6 +543,7 @@
             // 
             // guna2GradientButton8
             // 
+            this.guna2GradientButton8.Animated = true;
             this.guna2GradientButton8.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton8.BorderRadius = 20;
             this.guna2GradientButton8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -527,6 +557,8 @@
             this.guna2GradientButton8.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton8.Location = new System.Drawing.Point(42, 324);
             this.guna2GradientButton8.Name = "guna2GradientButton8";
+            this.guna2GradientButton8.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GradientButton8.Size = new System.Drawing.Size(180, 45);
             this.guna2GradientButton8.TabIndex = 8;
             this.guna2GradientButton8.Text = "Buy Now";
@@ -566,6 +598,90 @@
             this.guna2Panel18.Name = "guna2Panel18";
             this.guna2Panel18.Size = new System.Drawing.Size(387, 378);
             this.guna2Panel18.TabIndex = 2;
+            // 
+            // guna2GradientButton9
+            // 
+            this.guna2GradientButton9.Animated = true;
+            this.guna2GradientButton9.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton9.BorderRadius = 10;
+            this.guna2GradientButton9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton9.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientButton9.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton9.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton9.Location = new System.Drawing.Point(0, 193);
+            this.guna2GradientButton9.Name = "guna2GradientButton9";
+            this.guna2GradientButton9.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton9.Size = new System.Drawing.Size(232, 45);
+            this.guna2GradientButton9.TabIndex = 1;
+            this.guna2GradientButton9.Text = "Dashboard";
+            // 
+            // guna2GradientButton10
+            // 
+            this.guna2GradientButton10.Animated = true;
+            this.guna2GradientButton10.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton10.BorderRadius = 10;
+            this.guna2GradientButton10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton10.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2GradientButton10.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientButton10.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton10.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton10.Location = new System.Drawing.Point(0, 271);
+            this.guna2GradientButton10.Name = "guna2GradientButton10";
+            this.guna2GradientButton10.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton10.Size = new System.Drawing.Size(232, 45);
+            this.guna2GradientButton10.TabIndex = 2;
+            this.guna2GradientButton10.Text = "Cars";
+            // 
+            // guna2GradientButton11
+            // 
+            this.guna2GradientButton11.Animated = true;
+            this.guna2GradientButton11.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton11.BorderRadius = 10;
+            this.guna2GradientButton11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton11.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2GradientButton11.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientButton11.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton11.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton11.Location = new System.Drawing.Point(3, 347);
+            this.guna2GradientButton11.Name = "guna2GradientButton11";
+            this.guna2GradientButton11.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton11.Size = new System.Drawing.Size(232, 45);
+            this.guna2GradientButton11.TabIndex = 3;
+            this.guna2GradientButton11.Text = "Customers";
+            // 
+            // guna2GradientButton12
+            // 
+            this.guna2GradientButton12.Animated = true;
+            this.guna2GradientButton12.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton12.BorderRadius = 10;
+            this.guna2GradientButton12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton12.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2GradientButton12.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientButton12.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton12.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton12.Location = new System.Drawing.Point(0, 424);
+            this.guna2GradientButton12.Name = "guna2GradientButton12";
+            this.guna2GradientButton12.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
+            this.guna2GradientButton12.Size = new System.Drawing.Size(232, 45);
+            this.guna2GradientButton12.TabIndex = 4;
+            this.guna2GradientButton12.Text = "Calendar";
             // 
             // Cars
             // 
@@ -657,5 +773,9 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton8;
         private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton9;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton12;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton11;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton10;
     }
 }
