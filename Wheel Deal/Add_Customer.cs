@@ -14,7 +14,7 @@ namespace Wheel_Deal
     public partial class Add_Customer : Form
     {
 
-        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
 
         public Add_Customer()
         {
@@ -98,8 +98,29 @@ namespace Wheel_Deal
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\User\Source\Repos\Wheel-DealFinal\Wheel Deal\myDB.mdf"";Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("INSERT INTO Customer values ( " + CSID_text.Text")", con);
+
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                SqlCommand cmd = new SqlCommand("AddCustomer", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@PhoneNumber", Int64.Parse(phoneNumber_text.Text));
+                cmd.Parameters.AddWithValue("@CSID", CSID_text.Text);
+                cmd.Parameters.AddWithValue("@Gender", gender_text.Text);
+                cmd.Parameters.AddWithValue("@Birthday", birthday_customer.Value);
+                cmd.Parameters.AddWithValue("@Country", country_text.Text);
+                cmd.Parameters.AddWithValue("@City", city_text.Text);
+                cmd.Parameters.AddWithValue("@Name", name_text.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Customer added successfully");
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error!!!");
+            }
         }
     }
 }

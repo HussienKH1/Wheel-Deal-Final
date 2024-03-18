@@ -16,7 +16,7 @@ namespace Wheel_Deal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Add_Customer());
         }
     }
 }

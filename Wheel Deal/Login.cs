@@ -26,8 +26,7 @@ namespace Wheel_Deal
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\l\Source\Repos\Wheel-Deal-Final\Wheel Deal\myDB.mdf"";Integrated Security=True");
-
+   
             SqlCommand cmd = new SqlCommand("Select * from person where Login = '" + UName_txt.Text.Trim() + "' and Password = '" + Pass_txt.Text.Trim() + "'", con);
             con.Open();
             try
