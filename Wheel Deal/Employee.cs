@@ -16,5 +16,20 @@ namespace Wheel_Deal
         {
             InitializeComponent();
         }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
