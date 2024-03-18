@@ -30,13 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.view_pass = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Login_btn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Pass_txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.UName_txt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.view_pass = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -48,17 +50,37 @@
             this.guna2Panel1.Controls.Add(this.Pass_txt);
             this.guna2Panel1.Controls.Add(this.UName_txt);
             this.guna2Panel1.Location = new System.Drawing.Point(73, 90);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(604, 462);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // view_pass
+            // 
+            this.view_pass.AutoSize = true;
+            this.view_pass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(132)))), ((int)(((byte)(32)))));
+            this.view_pass.CheckedState.BorderRadius = 0;
+            this.view_pass.CheckedState.BorderThickness = 0;
+            this.view_pass.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(132)))), ((int)(((byte)(32)))));
+            this.view_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.view_pass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.view_pass.Location = new System.Drawing.Point(114, 307);
+            this.view_pass.Name = "view_pass";
+            this.view_pass.Size = new System.Drawing.Size(120, 20);
+            this.view_pass.TabIndex = 7;
+            this.view_pass.Text = "View password";
+            this.view_pass.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.view_pass.UncheckedState.BorderRadius = 0;
+            this.view_pass.UncheckedState.BorderThickness = 0;
+            this.view_pass.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.view_pass.CheckedChanged += new System.EventHandler(this.view_pass_CheckedChanged);
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(188, 10);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(212, 119);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -78,7 +100,7 @@
             this.Login_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Login_btn.ForeColor = System.Drawing.Color.White;
             this.Login_btn.Location = new System.Drawing.Point(173, 343);
-            this.Login_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Login_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Login_btn.Name = "Login_btn";
             this.Login_btn.Size = new System.Drawing.Size(240, 55);
             this.Login_btn.TabIndex = 3;
@@ -130,25 +152,19 @@
             this.UName_txt.TabIndex = 0;
             this.UName_txt.TextChanged += new System.EventHandler(this.UName_txt_TextChanged);
             // 
-            // view_pass
+            // guna2CirclePictureBox1
             // 
-            this.view_pass.AutoSize = true;
-            this.view_pass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(132)))), ((int)(((byte)(32)))));
-            this.view_pass.CheckedState.BorderRadius = 0;
-            this.view_pass.CheckedState.BorderThickness = 0;
-            this.view_pass.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(132)))), ((int)(((byte)(32)))));
-            this.view_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.view_pass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.view_pass.Location = new System.Drawing.Point(114, 307);
-            this.view_pass.Name = "view_pass";
-            this.view_pass.Size = new System.Drawing.Size(120, 20);
-            this.view_pass.TabIndex = 7;
-            this.view_pass.Text = "View password";
-            this.view_pass.UncheckedState.BorderColor = System.Drawing.Color.White;
-            this.view_pass.UncheckedState.BorderRadius = 0;
-            this.view_pass.UncheckedState.BorderThickness = 0;
-            this.view_pass.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.view_pass.CheckedChanged += new System.EventHandler(this.view_pass_CheckedChanged);
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1353, 8);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2CirclePictureBox1.TabIndex = 29;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // Login
             // 
@@ -157,15 +173,17 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1427, 702);
+            this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,5 +196,6 @@
         private Guna.UI2.WinForms.Guna2TextBox Pass_txt;
         private Guna.UI2.WinForms.Guna2TextBox UName_txt;
         private Guna.UI2.WinForms.Guna2CheckBox view_pass;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }
