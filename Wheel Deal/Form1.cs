@@ -10,28 +10,36 @@ using System.Windows.Forms;
 
 namespace Wheel_Deal
 {
-    public partial class Rent : Form
+    public partial class Form1 : Form
     {
-        public Rent()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void Rent_Load(object sender, EventArgs e)
+        private void guna2GradientButton10_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void guna2GradientButton11_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
