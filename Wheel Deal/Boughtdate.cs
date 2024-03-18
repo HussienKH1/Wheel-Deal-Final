@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Wheel_Deal
 {
-    public partial class Rent : Form
+    public partial class Boughtdate : Form
     {
-        public Rent()
+        public Boughtdate()
         {
             InitializeComponent();
         }
-
- 
     }
 }

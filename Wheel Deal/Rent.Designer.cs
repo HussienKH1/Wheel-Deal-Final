@@ -50,7 +50,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(118, 168);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(55, 22);
@@ -75,7 +75,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(524, 294);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(42, 22);
@@ -86,7 +86,7 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(524, 230);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(49, 22);
@@ -97,7 +97,7 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(524, 168);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(56, 22);
@@ -108,8 +108,8 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(118, 293);
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(119, 293);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(43, 22);
             this.guna2HtmlLabel5.TabIndex = 9;
@@ -119,7 +119,7 @@
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(118, 231);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(44, 22);
@@ -128,6 +128,8 @@
             // 
             // txt_RentID
             // 
+            this.txt_RentID.BackColor = System.Drawing.Color.Transparent;
+            this.txt_RentID.BorderRadius = 10;
             this.txt_RentID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_RentID.DefaultText = "";
             this.txt_RentID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -148,6 +150,8 @@
             // 
             // txt_CRID
             // 
+            this.txt_CRID.BackColor = System.Drawing.Color.Transparent;
+            this.txt_CRID.BorderRadius = 10;
             this.txt_CRID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_CRID.DefaultText = "";
             this.txt_CRID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -168,6 +172,8 @@
             // 
             // txt_Price
             // 
+            this.txt_Price.BackColor = System.Drawing.Color.Transparent;
+            this.txt_Price.BorderRadius = 10;
             this.txt_Price.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Price.DefaultText = "";
             this.txt_Price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -188,6 +194,8 @@
             // 
             // txt_EndID
             // 
+            this.txt_EndID.BackColor = System.Drawing.Color.Transparent;
+            this.txt_EndID.BorderRadius = 10;
             this.txt_EndID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_EndID.DefaultText = "";
             this.txt_EndID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -208,6 +216,8 @@
             // 
             // txt_StartID
             // 
+            this.txt_StartID.BackColor = System.Drawing.Color.Transparent;
+            this.txt_StartID.BorderRadius = 10;
             this.txt_StartID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_StartID.DefaultText = "";
             this.txt_StartID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -228,6 +238,8 @@
             // 
             // txt_CSID
             // 
+            this.txt_CSID.BackColor = System.Drawing.Color.Transparent;
+            this.txt_CSID.BorderRadius = 10;
             this.txt_CSID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_CSID.DefaultText = "";
             this.txt_CSID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -256,7 +268,7 @@
             this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(132)))), ((int)(((byte)(32)))));
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(68)))), ((int)(((byte)(24)))));
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
             this.guna2GradientButton1.Location = new System.Drawing.Point(431, 383);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(107, 46);
@@ -268,7 +280,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Wheel_Deal.Properties.Resources.abstract_black_background_sports_background_vector_32771212;
-            this.ClientSize = new System.Drawing.Size(972, 536);
+            this.ClientSize = new System.Drawing.Size(1049, 529);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.txt_CSID);
             this.Controls.Add(this.txt_StartID);
@@ -283,6 +295,7 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2HtmlLabel1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
             this.Name = "Rent";
             this.Text = "Rent";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
