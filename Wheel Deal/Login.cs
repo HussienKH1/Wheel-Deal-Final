@@ -81,5 +81,10 @@ namespace Wheel_Deal
                 Pass_txt.UseSystemPasswordChar = true;
             }
         }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

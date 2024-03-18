@@ -16,20 +16,5 @@ namespace Wheel_Deal
         {
             InitializeComponent();
         }
-
-        private void Admin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientButton12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
