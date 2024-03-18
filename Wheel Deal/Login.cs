@@ -21,12 +21,12 @@ namespace Wheel_Deal
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            Pass_txt.UseSystemPasswordChar = true;
         }
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\User\Source\Repos\Wheel-DealFinal\Wheel Deal\myDB.mdf"";Integrated Security=True");
 
             SqlCommand cmd = new SqlCommand("Select * from person where Login = '" + UName_txt.Text.Trim() + "' and Password = '" + Pass_txt.Text.Trim() + "'", con);
             con.Open();
@@ -37,7 +37,6 @@ namespace Wheel_Deal
                 adapter.Fill(dbt);
                 if (dbt.Rows.Count > 0)
                 {
-
                     if (dbt.Rows[0][6].ToString() == "Admin" && String.Compare(Pass_txt.Text, dbt.Rows[0][5].ToString(), false) == 0)
                     {
                         Global.CurrentUserName = dbt.Rows[0][4].ToString();
@@ -64,6 +63,24 @@ namespace Wheel_Deal
                 MessageBox.Show("Error occured...");
             }
             con.Close();
+        }
+
+        private void UName_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void view_pass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (view_pass.Checked == true)
+            {
+                Pass_txt.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                Pass_txt.UseSystemPasswordChar = true;
+            }
         }
     }
 }
