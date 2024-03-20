@@ -28,5 +28,10 @@ namespace Wheel_Deal
             add_Customer.ShowDialog();
             this.Hide();
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

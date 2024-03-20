@@ -69,5 +69,15 @@ namespace Wheel_Deal.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap abstract_black_background_sports_background_vector_327712121 {
+            get {
+                object obj = ResourceManager.GetObject("abstract-black-background-sports-background-vector-327712121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

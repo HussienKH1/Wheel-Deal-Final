@@ -21,5 +21,10 @@ namespace Wheel_Deal
         {
             this.Close();
         }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
