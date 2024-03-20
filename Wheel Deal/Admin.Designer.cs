@@ -201,7 +201,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(413, 97);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(779, 565);
+            this.guna2Panel1.Size = new System.Drawing.Size(845, 565);
             this.guna2Panel1.TabIndex = 31;
             // 
             // guna2Panel2
