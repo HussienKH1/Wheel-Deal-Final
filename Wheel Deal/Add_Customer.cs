@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Guna.UI2.WinForms;
 
 namespace Wheel_Deal
 {
@@ -107,7 +109,6 @@ namespace Wheel_Deal
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@PhoneNumber", Int64.Parse(phoneNumber_text.Text));
                 cmd.Parameters.AddWithValue("@CSID", CSID_text.Text);
-                cmd.Parameters.AddWithValue("@Gender", gender_text.Text);
                 cmd.Parameters.AddWithValue("@Birthday", birthday_customer.Value);
                 cmd.Parameters.AddWithValue("@Country", country_text.Text);
                 cmd.Parameters.AddWithValue("@City", city_text.Text);
@@ -132,11 +133,21 @@ namespace Wheel_Deal
         {
             CSID_text.Text = " ";
             name_text.Text = " ";
-            gender_text.Text = " ";
             country_text.Text = " ";
             city_text.Text = " ";
             phoneNumber_text.Text = " ";
 
         }
+
+        private void guna2ComboBox_SelectedIndexChanged()
+        {
+            guna2ComboBox myComboBox = new guna2ComboBox();
+            guna2ComboBox1.Items.Add("Female");
+            guna2ComboBox1.Items.Add("Male");
+
+            this.Controls.Add(guna2ComboBox1);
+        }
     }
 }
+
+
