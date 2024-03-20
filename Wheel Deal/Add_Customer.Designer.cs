@@ -323,6 +323,7 @@
             this.Login_btn.Size = new System.Drawing.Size(118, 45);
             this.Login_btn.TabIndex = 26;
             this.Login_btn.Text = "Clear";
+            this.Login_btn.Click += new System.EventHandler(this.Login_btn_Click);
             // 
             // guna2GradientButton1
             // 
@@ -399,7 +400,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Wheel_Deal.Properties.Resources.abstract_black_background_sports_background_vector_32771212;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 649);
             this.Controls.Add(this.guna2CirclePictureBox1);

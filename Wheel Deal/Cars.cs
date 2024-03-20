@@ -24,7 +24,55 @@ namespace Wheel_Deal
 
         private void guna2GradientButton6_Click(object sender, EventArgs e)
         {
+            New_or_Old form = new New_or_Old();
+            form.ShowDialog();
+        }
 
+        private void guna2GradientButton7_Click(object sender, EventArgs e)
+        {
+            New_or_Old form = new New_or_Old();
+            form.ShowDialog();
+        }
+
+        private void guna2GradientButton4_Click(object sender, EventArgs e)
+        {
+            New_or_Old form = new New_or_Old();
+            form.ShowDialog();
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            New_or_Old form = new New_or_Old();
+            form.ShowDialog();
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            New_or_Old form = new New_or_Old();
+            form.ShowDialog();
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            New_or_Old form = new New_or_Old();
+            form.ShowDialog();
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            New_or_Old form = new New_or_Old();
+            form.ShowDialog();
+        }
+
+        private void guna2GradientButton8_Click(object sender, EventArgs e)
+        {
+            New_or_Old form = new New_or_Old();
+            form.ShowDialog();
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

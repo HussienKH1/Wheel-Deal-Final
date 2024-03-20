@@ -127,5 +127,16 @@ namespace Wheel_Deal
         {
             this.Close();
         }
+
+        private void Login_btn_Click(object sender, EventArgs e)
+        {
+            CSID_text.Text = " ";
+            name_text.Text = " ";
+            gender_text.Text = " ";
+            country_text.Text = " ";
+            city_text.Text = " ";
+            phoneNumber_text.Text = " ";
+
+        }
     }
 }
