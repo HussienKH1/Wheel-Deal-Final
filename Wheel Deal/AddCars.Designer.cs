@@ -92,10 +92,11 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(129)))), ((int)(((byte)(31)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(755, 114);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(600, 67);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(107, 18);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(331, 51);
             this.guna2HtmlLabel1.TabIndex = 30;
             this.guna2HtmlLabel1.Text = "Adding New Cars ";
             // 
@@ -380,6 +381,7 @@
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel5.TabIndex = 46;
+            this.guna2HtmlLabel5.Text = null;
             this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
             // 
             // guna2HtmlLabel6
@@ -474,6 +476,8 @@
             this.AddCar_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.AddCar_button.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.AddCar_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddCar_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(132)))), ((int)(((byte)(32)))));
+            this.AddCar_button.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(68)))), ((int)(((byte)(24)))));
             this.AddCar_button.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.AddCar_button.ForeColor = System.Drawing.Color.White;
             this.AddCar_button.Location = new System.Drawing.Point(1079, 667);
@@ -492,6 +496,7 @@
             this.imageAddCars.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imageAddCars.TabIndex = 55;
             this.imageAddCars.TabStop = false;
+            this.imageAddCars.Click += new System.EventHandler(this.imageAddCars_Click);
             // 
             // browse_btn
             // 
@@ -500,6 +505,8 @@
             this.browse_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.browse_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.browse_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.browse_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(132)))), ((int)(((byte)(32)))));
+            this.browse_btn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(68)))), ((int)(((byte)(24)))));
             this.browse_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.browse_btn.ForeColor = System.Drawing.Color.Snow;
             this.browse_btn.Location = new System.Drawing.Point(104, 511);

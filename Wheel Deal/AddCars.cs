@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 
 namespace Wheel_Deal
@@ -44,7 +45,12 @@ namespace Wheel_Deal
         {
 
         }
-
+        private byte[] getPhoto() 
+        {
+            MemoryStream stream = new MemoryStream();
+            imageAddCars.Image.Save(stream, imageAddCars.Image.RawFormat);
+            return stream.GetBuffer(); 
+        }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             try
@@ -63,6 +69,7 @@ namespace Wheel_Deal
                 cmd.Parameters.AddWithValue("@Price", price_txt.Text);
                 cmd.Parameters.AddWithValue("@Type", type_txt.Text);
                 cmd.Parameters.AddWithValue("@Model", model_txt.Text);
+                cmd.Parameters.AddWithValue("@Image", getPhoto()); 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Car added successfully");
                 if (con.State == ConnectionState.Open)
@@ -94,6 +101,11 @@ namespace Wheel_Deal
         }
 
         private void AddCars_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imageAddCars_Click(object sender, EventArgs e)
         {
 
         }
