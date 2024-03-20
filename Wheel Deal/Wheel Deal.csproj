@@ -244,7 +244,14 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee2.Designer.cs">
+      <DependentUpon>Employee2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="guna2ComboBox.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee2.resx">
+      <DependentUpon>Employee2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

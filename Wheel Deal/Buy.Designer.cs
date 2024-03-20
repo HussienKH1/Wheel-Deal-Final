@@ -312,7 +312,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Wheel_Deal.Properties.Resources.abstract_black_background_sports_background_vector_327712121;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1276, 739);
+            this.ClientSize = new System.Drawing.Size(1282, 699);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.guna2GradientButton1);
