@@ -214,6 +214,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCars.Designer.cs">
+      <DependentUpon>AddCars.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddCars.resx">
+      <DependentUpon>AddCars.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_Customer.resx">
       <DependentUpon>Add_Customer.cs</DependentUpon>
     </EmbeddedResource>

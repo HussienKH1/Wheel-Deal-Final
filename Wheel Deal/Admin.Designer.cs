@@ -198,7 +198,7 @@
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Location = new System.Drawing.Point(375, 216);
+            this.guna2Panel1.Location = new System.Drawing.Point(413, 97);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(779, 565);
