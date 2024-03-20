@@ -17,6 +17,5 @@ namespace Wheel_Deal
             InitializeComponent();
         }
 
- 
     }
 }
