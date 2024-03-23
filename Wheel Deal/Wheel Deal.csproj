@@ -250,11 +250,17 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee2.cs">
+    <Compile Include="Add_Employee2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee2.Designer.cs">
-      <DependentUpon>Employee2.cs</DependentUpon>
+    <Compile Include="Add_Employee2.Designer.cs">
+      <DependentUpon>Add_Employee2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emplyee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emplyee.Designer.cs">
+      <DependentUpon>emplyee.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="guna2ComboBox.cs" />
@@ -275,7 +281,7 @@
     <Compile Include="New_or_Old.Designer.cs">
       <DependentUpon>New_or_Old.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include=".cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddCars.resx">
       <DependentUpon>AddCars.cs</DependentUpon>
@@ -295,8 +301,11 @@
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee2.resx">
-      <DependentUpon>Employee2.cs</DependentUpon>
+    <EmbeddedResource Include="Add_Employee2.resx">
+      <DependentUpon>Add_Employee2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emplyee.resx">
+      <DependentUpon>emplyee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
