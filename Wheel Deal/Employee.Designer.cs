@@ -288,7 +288,7 @@
             this.guna2GradientButton12.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
             this.guna2GradientButton12.Size = new System.Drawing.Size(229, 55);
             this.guna2GradientButton12.TabIndex = 4;
-            this.guna2GradientButton12.Text = "Employee";
+            this.guna2GradientButton12.Text = "Employees";
             this.guna2GradientButton12.Click += new System.EventHandler(this.guna2GradientButton12_Click);
             // 
             // guna2GradientButton11

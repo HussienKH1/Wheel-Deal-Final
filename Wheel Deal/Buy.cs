@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Wheel_Deal
 {
     public partial class Buy : Form
     {
+        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
         public Buy()
         {
             InitializeComponent();
@@ -29,7 +31,27 @@ namespace Wheel_Deal
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                SqlCommand cmd = new SqlCommand("Buy", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CSID", Int64.Parse (txt_CSID.Text));
+                cmd.Parameters.AddWithValue("@CRID", Int64.Parse(txt_CID.Text));
+                cmd.Parameters.AddWithValue("@BoughtID", Int64.Parse( txt_BID.Text));
+                cmd.Parameters.AddWithValue("@Boughtdate", picker_BD.Value);
+                cmd.Parameters.AddWithValue("@Price", txt_Price.Text);
+                cmd.Parameters.AddWithValue("@Payment", txt_payment.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("bought");
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error!!!");
+            }
         }
 
         private void guna2HtmlLabel6_Click(object sender, EventArgs e)
