@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Wheel_Deal
 {
-    public partial class Employee2 : Form
+    public partial class emplyee : Form
     {
-        public Employee2()
+        public emplyee()
         {
             InitializeComponent();
-        }
-
-        private void guna2GradientButton10_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

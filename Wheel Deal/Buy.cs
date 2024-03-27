@@ -92,5 +92,9 @@ namespace Wheel_Deal
 
         }
 
+        private void guna2CirclePictureBox1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
