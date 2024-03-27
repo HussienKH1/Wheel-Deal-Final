@@ -9,22 +9,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-
 namespace Wheel_Deal
 {
-   
-    public partial class Add_Employee2 : Form
+    public partial class Rent1 : Form
     {
-        public Add_Employee2()
+        public Rent1()
         {
             InitializeComponent();
         }
 
-
-        private void Add_Employee2_Load(object sender, EventArgs e)
+        private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
         {
-           
+            this.Close();
         }
 
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
