@@ -20,7 +20,7 @@ namespace Wheel_Deal {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("myDBDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("myDB")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class myDB : global::System.Data.DataSet {
         
@@ -175,9 +175,9 @@ namespace Wheel_Deal {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "myDBDataSet";
+            this.DataSetName = "myDB";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/myDBDataSet.xsd";
+            this.Namespace = "http://tempuri.org/myDB.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         }

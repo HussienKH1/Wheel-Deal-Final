@@ -31,27 +31,52 @@ namespace Wheel_Deal
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 if (con.State != ConnectionState.Open)
                     con.Open();
-                SqlCommand cmd = new SqlCommand("Buy", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@CSID", Int64.Parse (txt_CSID.Text));
-                cmd.Parameters.AddWithValue("@CRID", Int64.Parse(txt_CID.Text));
-                cmd.Parameters.AddWithValue("@BoughtID", Int64.Parse( txt_BID.Text));
-                cmd.Parameters.AddWithValue("@Boughtdate", picker_BD.Value);
-                cmd.Parameters.AddWithValue("@Price", txt_Price.Text);
-                cmd.Parameters.AddWithValue("@Payment", txt_payment.Text);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("bought");
-                if (con.State == ConnectionState.Open)
-                    con.Close();
+                int customerid = getCustomerID();
+                if (customerid != -1)
+                {
+                    SqlCommand cmd = new SqlCommand("Insert into Boughtby values (@BoughtID, @CRID, @CSID, @Price, @Date) ", con);
+                    cmd.Parameters.AddWithValue("@BoughtID", txt_BID.Text);
+                    cmd.Parameters.AddWithValue("@CRID", txt_CID.Text);
+                    cmd.Parameters.AddWithValue("@CSID", customerid);
+                    cmd.Parameters.AddWithValue("@Price", txt_Price.Text);
+                    cmd.Parameters.AddWithValue("@Date", picker_BD.Value);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Bought successfully");
+                    if (con.State == ConnectionState.Open)
+                        con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Customer");
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("error!!!");
+                MessageBox.Show("ERROR!");
             }
+        }
+
+        private int getCustomerID()
+        {
+            int customerid = -1;
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                SqlCommand cmd = new SqlCommand("Select CSID from Customer where Name like '"+txt_CSID.Text.Trim()+"'",con);
+
+                customerid = Convert.ToInt32(cmd.ExecuteScalar());
+
+            }
+            catch (Exception ex) { 
+                
+            }
+            return customerid;
         }
 
         private void guna2HtmlLabel6_Click(object sender, EventArgs e)

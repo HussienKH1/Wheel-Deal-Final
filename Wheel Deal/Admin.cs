@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Wheel_Deal
 {
     public partial class Admin : Form
     {
+        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
         public Admin()
         {
             InitializeComponent();
@@ -24,7 +26,23 @@ namespace Wheel_Deal
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            if (con.State != ConnectionState.Open)
+                con.Open();
+            try
+            {
+                string query = "SELECT * FROM person";
+                SqlCommand cmd = new SqlCommand(query, con);
+                DataTable dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                recent.DataSource = dt;
+            }
 
+            catch
+            {
+
+            }
+            if (con.State != ConnectionState.Closed)
+                con.Close();
         }
     }
 }

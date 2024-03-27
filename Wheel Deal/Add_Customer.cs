@@ -16,7 +16,7 @@ namespace Wheel_Deal
     public partial class Add_Customer : Form
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\User\source\repos\Wheel-Deal-Final\Wheel Deal\myDB.mdf"";Integrated Security=True");
+        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
 
         public Add_Customer()
         {
@@ -100,6 +100,7 @@ namespace Wheel_Deal
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
 
             try
             {
@@ -108,6 +109,7 @@ namespace Wheel_Deal
                 SqlCommand cmd = new SqlCommand("AddCustomer", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@PhoneNumber", Int64.Parse(phoneNumber_text.Text));
+                cmd.Parameters.AddWithValue("@Gender",gender.Text);
                 cmd.Parameters.AddWithValue("@CSID", CSID_text.Text);
                 cmd.Parameters.AddWithValue("@Birthday", birthday_customer.Value);
                 cmd.Parameters.AddWithValue("@Country", country_text.Text);

@@ -21,10 +21,33 @@ namespace Wheel_Deal
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            string query = "SELECT* FROM person";
-            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
+            if (con.State != ConnectionState.Open)
+                con.Open();
+            try
+            {
+                string query = "SELECT* FROM person";
+                SqlCommand cmd = new SqlCommand(query, con);
+                DataTable dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                employee.DataSource = dt;
+            }
+
+            catch { 
+            
+            }
+            if (con.State != ConnectionState.Closed)
+                con.Close();
+
+
+        }
+
+        private void employeeInfo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employee_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
