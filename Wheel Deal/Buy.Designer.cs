@@ -41,7 +41,7 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.picker_BD = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -62,13 +62,13 @@
             this.txt_BID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_BID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_BID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_BID.Location = new System.Drawing.Point(202, 362);
-            this.txt_BID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_BID.Location = new System.Drawing.Point(269, 446);
+            this.txt_BID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_BID.Name = "txt_BID";
             this.txt_BID.PasswordChar = '\0';
             this.txt_BID.PlaceholderText = "";
             this.txt_BID.SelectedText = "";
-            this.txt_BID.Size = new System.Drawing.Size(243, 38);
+            this.txt_BID.Size = new System.Drawing.Size(324, 47);
             this.txt_BID.TabIndex = 25;
             this.txt_BID.TextChanged += new System.EventHandler(this.txt_BID_TextChanged);
             // 
@@ -86,13 +86,13 @@
             this.txt_CID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_CID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_CID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_CID.Location = new System.Drawing.Point(202, 271);
-            this.txt_CID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_CID.Location = new System.Drawing.Point(269, 334);
+            this.txt_CID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_CID.Name = "txt_CID";
             this.txt_CID.PasswordChar = '\0';
             this.txt_CID.PlaceholderText = "";
             this.txt_CID.SelectedText = "";
-            this.txt_CID.Size = new System.Drawing.Size(243, 39);
+            this.txt_CID.Size = new System.Drawing.Size(324, 48);
             this.txt_CID.TabIndex = 26;
             this.txt_CID.TextChanged += new System.EventHandler(this.txt_CID_TextChanged);
             // 
@@ -110,13 +110,13 @@
             this.txt_CSID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_CSID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_CSID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_CSID.Location = new System.Drawing.Point(202, 185);
-            this.txt_CSID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_CSID.Location = new System.Drawing.Point(269, 228);
+            this.txt_CSID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_CSID.Name = "txt_CSID";
             this.txt_CSID.PasswordChar = '\0';
             this.txt_CSID.PlaceholderText = "";
             this.txt_CSID.SelectedText = "";
-            this.txt_CSID.Size = new System.Drawing.Size(243, 39);
+            this.txt_CSID.Size = new System.Drawing.Size(324, 48);
             this.txt_CSID.TabIndex = 27;
             this.txt_CSID.TextChanged += new System.EventHandler(this.txt_CSID_TextChanged);
             // 
@@ -134,13 +134,13 @@
             this.txt_payment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_payment.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_payment.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_payment.Location = new System.Drawing.Point(622, 362);
-            this.txt_payment.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_payment.Location = new System.Drawing.Point(829, 446);
+            this.txt_payment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_payment.Name = "txt_payment";
             this.txt_payment.PasswordChar = '\0';
             this.txt_payment.PlaceholderText = "";
             this.txt_payment.SelectedText = "";
-            this.txt_payment.Size = new System.Drawing.Size(243, 39);
+            this.txt_payment.Size = new System.Drawing.Size(324, 48);
             this.txt_payment.TabIndex = 28;
             this.txt_payment.TextChanged += new System.EventHandler(this.txt_payment_TextChanged);
             // 
@@ -158,13 +158,13 @@
             this.txt_Price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Price.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Price.Location = new System.Drawing.Point(622, 271);
-            this.txt_Price.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_Price.Location = new System.Drawing.Point(829, 334);
+            this.txt_Price.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.PasswordChar = '\0';
             this.txt_Price.PlaceholderText = "";
             this.txt_Price.SelectedText = "";
-            this.txt_Price.Size = new System.Drawing.Size(243, 39);
+            this.txt_Price.Size = new System.Drawing.Size(324, 48);
             this.txt_Price.TabIndex = 29;
             this.txt_Price.TextChanged += new System.EventHandler(this.txt_Price_TextChanged);
             // 
@@ -173,8 +173,8 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(202, 149);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(269, 183);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(107, 24);
             this.guna2HtmlLabel1.TabIndex = 31;
@@ -186,8 +186,8 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(202, 239);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(269, 294);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(59, 24);
             this.guna2HtmlLabel2.TabIndex = 32;
@@ -199,8 +199,8 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(202, 329);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(269, 405);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(87, 24);
             this.guna2HtmlLabel3.TabIndex = 33;
@@ -212,8 +212,8 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(622, 149);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(829, 183);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(105, 24);
             this.guna2HtmlLabel4.TabIndex = 34;
@@ -225,8 +225,8 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(622, 239);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(829, 294);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(49, 24);
             this.guna2HtmlLabel5.TabIndex = 35;
@@ -238,8 +238,8 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(622, 329);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(829, 405);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(78, 24);
             this.guna2HtmlLabel6.TabIndex = 36;
@@ -259,31 +259,31 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(68)))), ((int)(((byte)(24)))));
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(481, 446);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(641, 549);
+            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(91, 37);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(121, 46);
             this.guna2GradientButton1.TabIndex = 37;
             this.guna2GradientButton1.Text = "Buy";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // guna2DateTimePicker1
+            // picker_BD
             // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderRadius = 10;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(622, 185);
-            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(243, 39);
-            this.guna2DateTimePicker1.TabIndex = 38;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 3, 20, 14, 46, 33, 637);
-            this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
+            this.picker_BD.BackColor = System.Drawing.Color.Transparent;
+            this.picker_BD.BorderRadius = 10;
+            this.picker_BD.Checked = true;
+            this.picker_BD.FillColor = System.Drawing.Color.White;
+            this.picker_BD.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.picker_BD.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.picker_BD.Location = new System.Drawing.Point(829, 228);
+            this.picker_BD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picker_BD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.picker_BD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.picker_BD.Name = "picker_BD";
+            this.picker_BD.Size = new System.Drawing.Size(324, 48);
+            this.picker_BD.TabIndex = 38;
+            this.picker_BD.Value = new System.DateTime(2024, 3, 20, 14, 46, 33, 637);
+            this.picker_BD.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
             // 
             // guna2PictureBox1
             // 
@@ -291,8 +291,9 @@
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(198, 99);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(264, 122);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 40;
             this.guna2PictureBox1.TabStop = false;
@@ -303,11 +304,11 @@
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(916, 0);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1221, 0);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(48, 52);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 64);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.guna2CirclePictureBox1.TabIndex = 41;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -316,13 +317,14 @@
             // 
             // Buy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Wheel_Deal.Properties.Resources.abstract_black_background_sports_background_vector_327712121;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(962, 568);
+            this.ClientSize = new System.Drawing.Size(1283, 699);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.picker_BD);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2HtmlLabel5);
@@ -336,7 +338,7 @@
             this.Controls.Add(this.txt_CID);
             this.Controls.Add(this.txt_BID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Buy";
             this.Text = "Buy";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -359,7 +361,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker picker_BD;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }

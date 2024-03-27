@@ -20,10 +20,6 @@ namespace Wheel_Deal
             InitializeComponent();
         }
 
-        private void guna2GradientButton10_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Add_Employee2_Load(object sender, EventArgs e)
         {

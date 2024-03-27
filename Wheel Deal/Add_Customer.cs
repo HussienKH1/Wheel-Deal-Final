@@ -141,11 +141,17 @@ namespace Wheel_Deal
 
         private void guna2ComboBox_SelectedIndexChanged()
         {
-            guna2ComboBox myComboBox = new guna2ComboBox();
-            guna2ComboBox1.Items.Add("Female");
-            guna2ComboBox1.Items.Add("Male");
 
-            this.Controls.Add(guna2ComboBox1);
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

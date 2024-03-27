@@ -343,6 +343,7 @@
             this.guna2GradientButton2.Size = new System.Drawing.Size(157, 55);
             this.guna2GradientButton2.TabIndex = 26;
             this.guna2GradientButton2.Text = "Next";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2CirclePictureBox1
             // 
@@ -394,6 +395,7 @@
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(344, 36);
             this.guna2ComboBox1.TabIndex = 29;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // Add_Customer
             // 

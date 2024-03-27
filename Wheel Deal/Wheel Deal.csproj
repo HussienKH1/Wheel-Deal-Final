@@ -289,6 +289,12 @@
     </Compile>
     <Compile Include=".cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent1.Designer.cs">
+      <DependentUpon>Rent1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCars.resx">
       <DependentUpon>AddCars.cs</DependentUpon>
     </EmbeddedResource>
@@ -303,12 +309,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cars.resx">
       <DependentUpon>Cars.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Employee2.resx">
       <DependentUpon>Add_Employee2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="employeeInfo.resx">
       <DependentUpon>employeeInfo.cs</DependentUpon>
@@ -332,6 +340,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Rent1.resx">
+      <DependentUpon>Rent1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="myDB.xsc">
       <DependentUpon>myDB.xsd</DependentUpon>
     </None>
