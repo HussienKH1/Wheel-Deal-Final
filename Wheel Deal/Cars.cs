@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Wheel_Deal
 {
     public partial class Cars : Form
     {
+        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
         public Cars()
         {
             InitializeComponent();
@@ -73,6 +75,73 @@ namespace Wheel_Deal
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("Select * from cars where Name like '%" +search_guna+ "%'", con);
+            con.Open();
+            try
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dbt = new DataTable();
+                adapter.Fill(dbt);
+                con.Close();
+
+            }
+            catch (Exception ex) {
+                
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cars_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Car ", con);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    label1.Text = dt.Rows[2][1].ToString();
+                    label2.Text = dt.Rows[1][1].ToString();
+                    label3.Text = dt.Rows[0][1].ToString();
+                    label4.Text = dt.Rows[4][1].ToString();
+                    label5.Text = dt.Rows[3][1].ToString();
+                    label6.Text = dt.Rows[5][1].ToString();
+                    model1.Text = dt.Rows[2][9].ToString();
+                    model2.Text = dt.Rows[1][9].ToString();
+                    model3.Text = dt.Rows[0][9].ToString();
+                    model4.Text = dt.Rows[4][9].ToString();
+                    model5.Text = dt.Rows[3][9].ToString();
+                    model6.Text = dt.Rows[5][9].ToString();
+                    BUY1.Text = dt.Rows[2][7].ToString();
+                    BUY2.Text = dt.Rows[1][7].ToString();
+                    BUY4.Text = dt.Rows[5][7].ToString();
+                    Rent1.Text = dt.Rows[0][7].ToString();
+                    Rent2.Text = dt.Rows[3][7].ToString();
+                    Rent3.Text = dt.Rows[4][7].ToString();
+                }
+            }
+            catch (Exception ex) { }
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BUY2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
