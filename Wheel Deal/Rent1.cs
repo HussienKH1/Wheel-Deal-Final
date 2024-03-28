@@ -49,5 +49,7 @@ namespace Wheel_Deal
                 MessageBox.Show("error!!!");
             }
         }
+
+ 
     }
 }

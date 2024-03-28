@@ -54,9 +54,10 @@
             this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(68)))), ((int)(((byte)(24)))));
             this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(237, 317);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(316, 390);
+            this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(131, 45);
+            this.guna2GradientButton2.Size = new System.Drawing.Size(175, 55);
             this.guna2GradientButton2.TabIndex = 33;
             this.guna2GradientButton2.Text = "Retrieve Data";
             this.guna2GradientButton2.UseWaitCursor = true;
@@ -90,10 +91,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.employee.DefaultCellStyle = dataGridViewCellStyle3;
             this.employee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.employee.Location = new System.Drawing.Point(62, 12);
+            this.employee.Location = new System.Drawing.Point(83, 15);
+            this.employee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.employee.Name = "employee";
             this.employee.RowHeadersVisible = false;
-            this.employee.Size = new System.Drawing.Size(501, 282);
+            this.employee.RowHeadersWidth = 51;
+            this.employee.Size = new System.Drawing.Size(668, 347);
             this.employee.TabIndex = 34;
             this.employee.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.employee.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -120,12 +123,13 @@
             // 
             // employeeInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 438);
+            this.BackgroundImage = global::Wheel_Deal.Properties.Resources.abstract_black_background_sports_background_vector_327712121;
+            this.ClientSize = new System.Drawing.Size(833, 539);
             this.Controls.Add(this.employee);
             this.Controls.Add(this.guna2GradientButton2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "employeeInfo";
             this.Text = "employeeInfo";
             this.Load += new System.EventHandler(this.employeeInfo_Load);

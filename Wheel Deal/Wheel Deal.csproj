@@ -238,6 +238,12 @@
     <Compile Include="Cars.Designer.cs">
       <DependentUpon>Cars.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,23 +256,11 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add_Employee2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add_Employee2.Designer.cs">
-      <DependentUpon>Add_Employee2.cs</DependentUpon>
-    </Compile>
     <Compile Include="employeeInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="employeeInfo.Designer.cs">
       <DependentUpon>employeeInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="emplyee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="emplyee.Designer.cs">
-      <DependentUpon>emplyee.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="guna2ComboBox.cs" />
@@ -311,18 +305,14 @@
       <DependentUpon>Cars.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add_Employee2.resx">
-      <DependentUpon>Add_Employee2.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="employeeInfo.resx">
       <DependentUpon>employeeInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="emplyee.resx">
-      <DependentUpon>emplyee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

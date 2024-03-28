@@ -114,7 +114,7 @@
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(121, 46);
             this.guna2GradientButton1.TabIndex = 53;
-            this.guna2GradientButton1.Text = "Buy";
+            this.guna2GradientButton1.Text = "Rent";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2HtmlLabel6
