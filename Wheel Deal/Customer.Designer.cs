@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton11 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -41,15 +41,24 @@
             this.dgv_customer = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.WELCOME = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LOG_OUT3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
+            this.menu3 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.Logout = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.menu3.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.WELCOME);
+            this.guna2GradientPanel1.Controls.Add(this.LOG_OUT3);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Panel19);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton12);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton11);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton10);
@@ -137,6 +146,7 @@
             this.guna2GradientButton10.Size = new System.Drawing.Size(309, 55);
             this.guna2GradientButton10.TabIndex = 2;
             this.guna2GradientButton10.Text = "Cars";
+            this.guna2GradientButton10.Click += new System.EventHandler(this.guna2GradientButton10_Click);
             // 
             // guna2GradientButton9
             // 
@@ -162,6 +172,7 @@
             this.guna2GradientButton9.Size = new System.Drawing.Size(309, 55);
             this.guna2GradientButton9.TabIndex = 1;
             this.guna2GradientButton9.Text = "Dashboard";
+            this.guna2GradientButton9.Click += new System.EventHandler(this.guna2GradientButton9_Click);
             // 
             // guna2PictureBox1
             // 
@@ -264,6 +275,66 @@
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
+            // WELCOME
+            // 
+            this.WELCOME.BackColor = System.Drawing.Color.Transparent;
+            this.WELCOME.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WELCOME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.WELCOME.Location = new System.Drawing.Point(49, 715);
+            this.WELCOME.Name = "WELCOME";
+            this.WELCOME.Size = new System.Drawing.Size(106, 35);
+            this.WELCOME.TabIndex = 35;
+            this.WELCOME.Text = "WELCOME";
+            // 
+            // LOG_OUT3
+            // 
+            this.LOG_OUT3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.LOG_OUT3.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.LOG_OUT3.Image = ((System.Drawing.Image)(resources.GetObject("LOG_OUT3.Image")));
+            this.LOG_OUT3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.LOG_OUT3.ImageRotate = 0F;
+            this.LOG_OUT3.ImageSize = new System.Drawing.Size(40, 40);
+            this.LOG_OUT3.Location = new System.Drawing.Point(233, 724);
+            this.LOG_OUT3.Name = "LOG_OUT3";
+            this.LOG_OUT3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.LOG_OUT3.Size = new System.Drawing.Size(64, 54);
+            this.LOG_OUT3.TabIndex = 34;
+            this.LOG_OUT3.Click += new System.EventHandler(this.LOG_OUT3_Click);
+            // 
+            // guna2Panel19
+            // 
+            this.guna2Panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.guna2Panel19.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guna2Panel19.Location = new System.Drawing.Point(-1, 689);
+            this.guna2Panel19.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel19.Name = "guna2Panel19";
+            this.guna2Panel19.Size = new System.Drawing.Size(316, 4);
+            this.guna2Panel19.TabIndex = 33;
+            // 
+            // menu3
+            // 
+            this.menu3.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menu3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Logout});
+            this.menu3.Name = "menu3";
+            this.menu3.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.menu3.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.menu3.RenderStyle.ColorTable = null;
+            this.menu3.RenderStyle.RoundedEdges = true;
+            this.menu3.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.menu3.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.menu3.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.menu3.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.menu3.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.menu3.Size = new System.Drawing.Size(211, 56);
+            this.menu3.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menu3_ItemClicked);
+            // 
+            // Logout
+            // 
+            this.Logout.Name = "Logout";
+            this.Logout.Size = new System.Drawing.Size(210, 24);
+            this.Logout.Text = "LogOut";
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -278,9 +349,11 @@
             this.Name = "Customer";
             this.Text = "Customer";
             this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.menu3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -296,5 +369,10 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgv_customer;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel WELCOME;
+        private Guna.UI2.WinForms.Guna2ImageButton LOG_OUT3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel19;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip menu3;
+        private System.Windows.Forms.ToolStripMenuItem Logout;
     }
 }

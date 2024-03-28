@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Web.UI.WebControls;
 
 namespace Wheel_Deal
 {
@@ -140,6 +141,42 @@ namespace Wheel_Deal
         }
 
         private void BUY2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton9_Click(object sender, EventArgs e)
+        {
+            Admin objform2 = new Admin();
+            this.Hide();
+            objform2.Show(); 
+        }
+
+        private void guna2GradientButton11_Click(object sender, EventArgs e)
+        {  
+            Customer objform2= new Customer();
+            this.Hide();
+            objform2.Show();
+        }
+
+        private void LOG_OUT_Click(object sender, EventArgs e)
+        {
+            menu.Show(LOG_OUT, 0, LOG_OUT.Height);
+        }
+
+        private void menu_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            Login nform = new Login();
+            this.Hide();
+            nform.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

@@ -44,5 +44,54 @@ namespace Wheel_Deal
             if (con.State != ConnectionState.Closed)
                 con.Close();
         }
+
+        private void guna2GradientButton10_Click(object sender, EventArgs e)
+        {
+            Cars objform2 = new Cars();
+            this.Hide();
+            objform2.Show();
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Login objform2= new Login();
+            this.Hide();
+            objform2.Show();
+        }
+
+        private void guna2GradientButton11_Click(object sender, EventArgs e)
+        {
+            Customer objform2 = new Customer();
+            this.Hide();
+            objform2.Show();
+        }
+
+        private void guna2Panel19_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void WELCOME_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LOG_OUT_Click(object sender, EventArgs e)
+        {
+            menu2.Show(LOG_OUT2, 0, LOG_OUT2.Height);
+        }
+
+        private void menu2_Opening(object sender, CancelEventArgs e)
+        {
+            
+        }
+
+        private void menu2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            Login nform = new Login();
+            this.Hide();
+            nform.Show();
+        }
     }
 }

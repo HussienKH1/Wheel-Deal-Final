@@ -543,4 +543,17 @@
         4VtX/v4SnUH66Lv498QN/vcsLPwHx8d43zuXPUoAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="LOG_OUT2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAAOxJREFUaEPtl0sKAjEQROeGongqQfBG/k5gZ3bOHEJ0r6nQiwzU0pBW6sGDAXtR
+        EzMNNYh/ZB7H7ZTSJftyz9mN/xyb2ewwp/Rm5pfY+1hMcPIseO1ktvbxeOTTv7LQtflfOPl4PHDfWeiF
+        Zk8fjwfC0dC1Zg8fjwe2DQ1da3b08XhgVdLQlffbbeXjMcGqZMGLZjsfiw1WJa4KPuryYefn8CcvhBDi
+        a6jQ9EKFpje47yz0QhWahmDb0NC1KjSNwapkwYsqNEIIIX4BFZpeqND0BvedhV6oQtMQbBsaulaFpjFY
+        lSx4UYVGRGMYPuUTgSjIockTAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="menu2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
