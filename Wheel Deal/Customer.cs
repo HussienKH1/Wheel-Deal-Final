@@ -71,5 +71,63 @@ namespace Wheel_Deal
             this.Hide();
             nform.Show();
         }
+
+        private void Customer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Add_Customer objform = new Add_Customer();
+            objform.Show();
+        }
+
+        private void guna2GradientButton4_Click(object sender, EventArgs e)
+        {
+            Add_Customer objform = new Add_Customer();
+            objform.Show();
+        }
+
+        private void guna2GradientButton1_Click_1(object sender, EventArgs e)
+        {
+            if (con.State != ConnectionState.Open)
+                con.Open();
+            try
+            {
+                string query = "SELECT* FROM Customer";
+                SqlCommand cmd = new SqlCommand(query, con);
+                DataTable dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                dgv_customer.DataSource = dt;
+            }
+
+            catch
+            {
+
+            }
+            if (con.State != ConnectionState.Closed)
+                con.Close();
+        }
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            if (con.State != ConnectionState.Open)
+                con.Open();
+            try
+            {
+                string query = "SELECT* FROM Customer";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataSet dt = new System.Data.DataSet();
+                adapter.Fill(dt, "Customer");
+                dgv_customer.DataSource = dt.Tables[0];
+            }
+
+            catch
+            {
+
+            }
+            if (con.State != ConnectionState.Closed)
+                con.Close();
+        }
     }
 }
