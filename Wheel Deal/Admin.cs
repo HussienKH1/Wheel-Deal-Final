@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Wheel_Deal
 {
@@ -93,5 +94,20 @@ namespace Wheel_Deal
             this.Hide();
             nform.Show();
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT Month, profits From test ", con);
+            da.Fill(dt);
+            Profit_Chart.DataSource = dt;
+            con.Close();
+            Profit_Chart.Series["profits"].XValueMember = "Month";
+            Profit_Chart.Series["profits"].YValueMembers = "Profits";
+            Profit_Chart.Titles.Add("Monthly Profits");
+        
+
+    }
     }
 }
