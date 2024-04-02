@@ -154,6 +154,11 @@ namespace Wheel_Deal
         {
 
         }
+
+        private void birthday_customer_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

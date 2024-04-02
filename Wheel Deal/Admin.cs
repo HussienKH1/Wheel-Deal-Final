@@ -37,6 +37,25 @@ namespace Wheel_Deal
                 DataTable dt = new DataTable();
                 dt.Load(cmd.ExecuteReader());
                 recent.DataSource = dt;
+                string query1 = "SELECT CRID, COUNT(*) AS sales_count FROM Boughtby GROUP BY CRID ORDER BY CRID DESC";
+
+                SqlCommand command = new SqlCommand(query1, con);
+
+
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string CRID = reader["CRID"].ToString();
+                    int salesCount = Convert.ToInt32(reader["CRID"]);
+
+                    chart1.Series["Sales"].Points.AddXY(CRID, salesCount);
+                }
+
+                reader.Close();
+
+
             }
 
             catch
@@ -108,6 +127,12 @@ namespace Wheel_Deal
             {
                 MessageBox.Show("Invalid Function!");
             }
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
 }
