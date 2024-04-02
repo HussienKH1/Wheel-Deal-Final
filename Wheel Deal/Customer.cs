@@ -13,7 +13,8 @@ namespace Wheel_Deal
 {
     public partial class Customer : Form
     {
-        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        Int64 id;
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
         public Customer()
         {
             InitializeComponent();
@@ -91,6 +92,7 @@ namespace Wheel_Deal
 
         private void guna2GradientButton1_Click_1(object sender, EventArgs e)
         {
+            
             if (con.State != ConnectionState.Open)
                 con.Open();
             try
@@ -125,6 +127,75 @@ namespace Wheel_Deal
             catch
             {
 
+            }
+            if (con.State != ConnectionState.Closed)
+                con.Close();
+        }
+
+        private void search_guna_TextChanged(object sender, EventArgs e)
+        {
+            if (con.State != ConnectionState.Open)
+                con.Open();
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Select * from Customer where Name like '%" + txt_search.Text + "%'", con);
+                SqlDataAdapter da = new SqlDataAdapter();
+                DataTable dt = new DataTable();
+                da.SelectCommand = cmd;
+                dt.Clear();
+                da.Fill(dt);
+                dgv_customer.DataSource = dt;
+            }
+
+            catch
+            {
+                MessageBox.Show("Error");
+            }
+            if (con.State == ConnectionState.Open)
+                con.Close();
+        }
+
+        private void dgv_customer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        public void LoadData()
+        {
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter("Select * from Customer", con);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dgv_customer.DataSource = dt;
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
+            if (con.State != ConnectionState.Closed)
+                con.Close();
+        }
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            int rowIndex = dgv_customer.CurrentCell.RowIndex;
+            dgv_customer.Rows.RemoveAt(rowIndex);
+            if (con.State != ConnectionState.Open)
+                con.Open();
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand("Delete from Customer where PhoneNumber =' " + id + "'", con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Deleted Successfully!");
+                LoadData();
+            }
+            catch
+            {
+                MessageBox.Show("Error");
             }
             if (con.State != ConnectionState.Closed)
                 con.Close();

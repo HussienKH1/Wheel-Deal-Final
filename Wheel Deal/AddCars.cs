@@ -15,7 +15,7 @@ namespace Wheel_Deal
 {
     public partial class AddCars : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\User\source\repos\Wheel-Deal-Final\Wheel Deal\myDB.mdf"";Integrated Security=True");
+        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
         public AddCars()
         {
             InitializeComponent();

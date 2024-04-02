@@ -101,7 +101,6 @@ namespace Wheel_Deal
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
-
             try
             {
                 if (con.State != ConnectionState.Open)
@@ -122,10 +121,8 @@ namespace Wheel_Deal
             }
             catch (Exception ex)
             {
-                MessageBox.Show("error!!!");
-            }
-
-            
+                MessageBox.Show("Error!");
+            }  
         }
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
