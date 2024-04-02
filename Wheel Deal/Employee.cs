@@ -29,9 +29,8 @@ namespace Wheel_Deal
             {
                 if (con.State != ConnectionState.Open)
                     con.Open();
-                SqlCommand cmd = new SqlCommand("Employee", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@CID", Int64.Parse(txt_SSN.Text));
+                SqlCommand cmd = new SqlCommand("Insert into person values (@CID, @Name, @Age, @Address, @login, @password, @Role", con);
+                cmd.Parameters.AddWithValue("@CID", txt_SSN.Text);
                 cmd.Parameters.AddWithValue("@Name", txt_Name.Text);
                 cmd.Parameters.AddWithValue("@Age", txt_Age.Text);
                 cmd.Parameters.AddWithValue("@Address", txt_Address.Text);

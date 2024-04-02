@@ -64,7 +64,7 @@
             this.view_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.view_pass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.view_pass.Location = new System.Drawing.Point(86, 249);
-            this.view_pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.view_pass.Margin = new System.Windows.Forms.Padding(2);
             this.view_pass.Name = "view_pass";
             this.view_pass.Size = new System.Drawing.Size(97, 17);
             this.view_pass.TabIndex = 7;
@@ -157,7 +157,7 @@
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1015, 6);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(48, 52);
@@ -177,6 +177,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.guna2Panel1.ResumeLayout(false);
