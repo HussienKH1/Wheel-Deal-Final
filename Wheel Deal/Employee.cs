@@ -29,14 +29,15 @@ namespace Wheel_Deal
             {
                 if (con.State != ConnectionState.Open)
                     con.Open();
-                SqlCommand cmd = new SqlCommand("Insert into person values (@CID, @Name, @Age, @Address, @login, @password, @Role", con);
+                string role = "Employee";
+                SqlCommand cmd = new SqlCommand("Insert into person values (@CID, @Name, @Age, @Address, @login, @password, @Role)", con);
                 cmd.Parameters.AddWithValue("@CID", txt_SSN.Text);
                 cmd.Parameters.AddWithValue("@Name", txt_Name.Text);
                 cmd.Parameters.AddWithValue("@Age", txt_Age.Text);
                 cmd.Parameters.AddWithValue("@Address", txt_Address.Text);
                 cmd.Parameters.AddWithValue("@login", txt_login.Text);
                 cmd.Parameters.AddWithValue("@password",txt_paasword .Text);
-                cmd.Parameters.AddWithValue("@Role", txt_role.Text);
+                cmd.Parameters.AddWithValue("@Role", role);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Employee added successfully");
                 if (con.State == ConnectionState.Open)
@@ -154,17 +155,6 @@ namespace Wheel_Deal
             txt_phone.Text = " ";
         }
 
-        private void guna2GradientButton11_Click(object sender, EventArgs e)
-        {
-            SqlCommand cmd = new SqlCommand("drop * from person where SSN = '" + txt_SSN.Text.Trim() + "', Name'" + txt_Name.Text.Trim() + "', Age'" + txt_Age.Text.Trim() + "', Address'" + txt_Address.Text.Trim() + "',Login'" + txt_login.Text.Trim() + "',Password = '" + txt_paasword.Text.Trim() + "'and Role'" + txt_role.Text.Trim() + "'", con);
-            con.Open();
-        }
-
-        private void guna2GradientButton10_Click(object sender, EventArgs e)
-        {
-            SqlCommand cmd = new SqlCommand("update * from person where SSN = '" + txt_SSN.Text.Trim() + "', Name'" + txt_Name.Text.Trim() + "', Age'" + txt_Age.Text.Trim() + "', Address'" + txt_Address.Text.Trim() + "',Login'" + txt_login.Text.Trim() + "',Password = '" + txt_paasword.Text.Trim() + "'and Role'" + txt_role.Text.Trim() + "'", con);
-            con.Open();
-        }
             private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -173,6 +163,11 @@ namespace Wheel_Deal
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2HtmlLabel7_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

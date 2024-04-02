@@ -33,9 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.WELCOME = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -55,19 +52,19 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.menu2 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.Logout = new System.Windows.Forms.ToolStripMenuItem();
-            this.Profit_Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.name_txt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recent)).BeginInit();
             this.menu2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Profit_Chart)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.name_txt);
             this.guna2GradientPanel1.Controls.Add(this.WELCOME);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton12);
             this.guna2GradientPanel1.Controls.Add(this.LOG_OUT2);
@@ -109,7 +106,7 @@
             this.guna2GradientButton12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientButton12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientButton12.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientButton12.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton12.Font = new System.Drawing.Font("Mongolian Baiti", 12F);
             this.guna2GradientButton12.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton12.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton12.Image")));
             this.guna2GradientButton12.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -119,7 +116,8 @@
             this.guna2GradientButton12.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
             this.guna2GradientButton12.Size = new System.Drawing.Size(309, 55);
             this.guna2GradientButton12.TabIndex = 4;
-            this.guna2GradientButton12.Text = "Calendar";
+            this.guna2GradientButton12.Text = "Employee";
+            this.guna2GradientButton12.Click += new System.EventHandler(this.guna2GradientButton12_Click);
             // 
             // LOG_OUT2
             // 
@@ -412,22 +410,14 @@
             this.Logout.Size = new System.Drawing.Size(125, 24);
             this.Logout.Text = "Logout";
             // 
-            // Profit_Chart
+            // name_txt
             // 
-            chartArea1.Name = "ChartArea1";
-            this.Profit_Chart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.Profit_Chart.Legends.Add(legend1);
-            this.Profit_Chart.Location = new System.Drawing.Point(329, 12);
-            this.Profit_Chart.Name = "Profit_Chart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "profits";
-            this.Profit_Chart.Series.Add(series1);
-            this.Profit_Chart.Size = new System.Drawing.Size(880, 343);
-            this.Profit_Chart.TabIndex = 32;
-            this.Profit_Chart.Text = "DataTable";
-            this.Profit_Chart.Click += new System.EventHandler(this.chart1_Click);
+            this.name_txt.BackColor = System.Drawing.Color.Transparent;
+            this.name_txt.Location = new System.Drawing.Point(47, 929);
+            this.name_txt.Name = "name_txt";
+            this.name_txt.Size = new System.Drawing.Size(108, 18);
+            this.name_txt.TabIndex = 36;
+            this.name_txt.Text = "guna2HtmlLabel5";
             // 
             // Admin
             // 
@@ -435,7 +425,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1940, 974);
-            this.Controls.Add(this.Profit_Chart);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -454,7 +443,6 @@
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recent)).EndInit();
             this.menu2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Profit_Chart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -480,6 +468,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel19;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip menu2;
         private System.Windows.Forms.ToolStripMenuItem Logout;
-        private System.Windows.Forms.DataVisualization.Charting.Chart Profit_Chart;
+        private Guna.UI2.WinForms.Guna2HtmlLabel name_txt;
     }
 }

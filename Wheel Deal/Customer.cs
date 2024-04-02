@@ -14,7 +14,7 @@ namespace Wheel_Deal
     public partial class Customer : Form
     {
         Int64 id;
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
+        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
         public Customer()
         {
             InitializeComponent();
@@ -188,7 +188,7 @@ namespace Wheel_Deal
             try
             {
 
-                SqlCommand cmd = new SqlCommand("Delete from Customer where PhoneNumber =' " + id + "'", con);
+                SqlCommand cmd = new SqlCommand("Delete from Customer where CSID =' " + id + "'", con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Deleted Successfully!");
                 LoadData();
@@ -199,6 +199,12 @@ namespace Wheel_Deal
             }
             if (con.State != ConnectionState.Closed)
                 con.Close();
+        }
+
+        private void dgv_customer_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dgv_customer.Rows[e.RowIndex];
+            id = Convert.ToInt64(row.Cells[0].Value);
         }
     }
 }

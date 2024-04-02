@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -73,8 +73,9 @@
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(1, -2);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(235, 794);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(313, 977);
             this.guna2GradientPanel1.TabIndex = 1;
             // 
             // guna2GradientButton12
@@ -95,10 +96,11 @@
             this.guna2GradientButton12.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton12.Image")));
             this.guna2GradientButton12.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton12.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2GradientButton12.Location = new System.Drawing.Point(0, 417);
+            this.guna2GradientButton12.Location = new System.Drawing.Point(0, 513);
+            this.guna2GradientButton12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton12.Name = "guna2GradientButton12";
             this.guna2GradientButton12.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
-            this.guna2GradientButton12.Size = new System.Drawing.Size(232, 45);
+            this.guna2GradientButton12.Size = new System.Drawing.Size(309, 55);
             this.guna2GradientButton12.TabIndex = 37;
             this.guna2GradientButton12.Text = "Employees";
             // 
@@ -107,9 +109,10 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sitka Text Semibold", 12F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(10, 756);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(13, 930);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 25);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(173, 31);
             this.guna2HtmlLabel1.TabIndex = 36;
             this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
             // 
@@ -118,10 +121,10 @@
             this.WELCOME.BackColor = System.Drawing.Color.Transparent;
             this.WELCOME.Font = new System.Drawing.Font("Sitka Text Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.WELCOME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
-            this.WELCOME.Location = new System.Drawing.Point(10, 711);
-            this.WELCOME.Margin = new System.Windows.Forms.Padding(2);
+            this.WELCOME.Location = new System.Drawing.Point(13, 875);
+            this.WELCOME.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.WELCOME.Name = "WELCOME";
-            this.WELCOME.Size = new System.Drawing.Size(113, 32);
+            this.WELCOME.Size = new System.Drawing.Size(138, 40);
             this.WELCOME.TabIndex = 35;
             this.WELCOME.Text = "WELCOME";
             // 
@@ -133,11 +136,11 @@
             this.LOG_OUT3.ImageOffset = new System.Drawing.Point(0, 0);
             this.LOG_OUT3.ImageRotate = 0F;
             this.LOG_OUT3.ImageSize = new System.Drawing.Size(30, 30);
-            this.LOG_OUT3.Location = new System.Drawing.Point(173, 727);
-            this.LOG_OUT3.Margin = new System.Windows.Forms.Padding(2);
+            this.LOG_OUT3.Location = new System.Drawing.Point(231, 895);
+            this.LOG_OUT3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LOG_OUT3.Name = "LOG_OUT3";
             this.LOG_OUT3.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.LOG_OUT3.Size = new System.Drawing.Size(48, 44);
+            this.LOG_OUT3.Size = new System.Drawing.Size(64, 54);
             this.LOG_OUT3.TabIndex = 34;
             this.LOG_OUT3.Click += new System.EventHandler(this.LOG_OUT3_Click);
             // 
@@ -145,9 +148,10 @@
             // 
             this.guna2Panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
             this.guna2Panel19.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel19.Location = new System.Drawing.Point(-2, 703);
+            this.guna2Panel19.Location = new System.Drawing.Point(-3, 865);
+            this.guna2Panel19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel19.Name = "guna2Panel19";
-            this.guna2Panel19.Size = new System.Drawing.Size(237, 3);
+            this.guna2Panel19.Size = new System.Drawing.Size(316, 4);
             this.guna2Panel19.TabIndex = 33;
             // 
             // guna2GradientButton11
@@ -167,10 +171,11 @@
             this.guna2GradientButton11.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton11.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton11.Image")));
             this.guna2GradientButton11.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton11.Location = new System.Drawing.Point(3, 347);
+            this.guna2GradientButton11.Location = new System.Drawing.Point(4, 427);
+            this.guna2GradientButton11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton11.Name = "guna2GradientButton11";
             this.guna2GradientButton11.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
-            this.guna2GradientButton11.Size = new System.Drawing.Size(229, 45);
+            this.guna2GradientButton11.Size = new System.Drawing.Size(305, 55);
             this.guna2GradientButton11.TabIndex = 3;
             this.guna2GradientButton11.Text = "Customers";
             // 
@@ -191,10 +196,11 @@
             this.guna2GradientButton10.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton10.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton10.Image")));
             this.guna2GradientButton10.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton10.Location = new System.Drawing.Point(0, 271);
+            this.guna2GradientButton10.Location = new System.Drawing.Point(0, 334);
+            this.guna2GradientButton10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton10.Name = "guna2GradientButton10";
             this.guna2GradientButton10.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
-            this.guna2GradientButton10.Size = new System.Drawing.Size(232, 45);
+            this.guna2GradientButton10.Size = new System.Drawing.Size(309, 55);
             this.guna2GradientButton10.TabIndex = 2;
             this.guna2GradientButton10.Text = "Cars";
             this.guna2GradientButton10.Click += new System.EventHandler(this.guna2GradientButton10_Click);
@@ -216,10 +222,11 @@
             this.guna2GradientButton9.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton9.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton9.Image")));
             this.guna2GradientButton9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton9.Location = new System.Drawing.Point(0, 193);
+            this.guna2GradientButton9.Location = new System.Drawing.Point(0, 238);
+            this.guna2GradientButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton9.Name = "guna2GradientButton9";
             this.guna2GradientButton9.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(224)))));
-            this.guna2GradientButton9.Size = new System.Drawing.Size(232, 45);
+            this.guna2GradientButton9.Size = new System.Drawing.Size(309, 55);
             this.guna2GradientButton9.TabIndex = 1;
             this.guna2GradientButton9.Text = "Dashboard";
             this.guna2GradientButton9.Click += new System.EventHandler(this.guna2GradientButton9_Click);
@@ -228,44 +235,45 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(11, 14);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(15, 17);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(210, 88);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(280, 108);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
             // dgv_customer
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgv_customer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.dgv_customer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_customer.BackgroundColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_customer.ColumnHeadersHeight = 4;
             this.dgv_customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_customer.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_customer.DefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_customer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_customer.Location = new System.Drawing.Point(330, 11);
-            this.dgv_customer.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_customer.Location = new System.Drawing.Point(440, 14);
+            this.dgv_customer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_customer.Name = "dgv_customer";
             this.dgv_customer.RowHeadersVisible = false;
             this.dgv_customer.RowHeadersWidth = 51;
             this.dgv_customer.RowTemplate.Height = 24;
-            this.dgv_customer.Size = new System.Drawing.Size(958, 439);
+            this.dgv_customer.Size = new System.Drawing.Size(1277, 540);
             this.dgv_customer.TabIndex = 5;
             this.dgv_customer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_customer.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -288,17 +296,18 @@
             this.dgv_customer.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_customer.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_customer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_customer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_CellClick);
             this.dgv_customer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_CellContentClick);
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1396, 11);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1861, 14);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(48, 52);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 64);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.guna2CirclePictureBox1.TabIndex = 35;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -319,13 +328,13 @@
             this.menu3.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.menu3.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.menu3.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.menu3.Size = new System.Drawing.Size(115, 26);
+            this.menu3.Size = new System.Drawing.Size(128, 28);
             this.menu3.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menu3_ItemClicked);
             // 
             // Logout
             // 
             this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(114, 22);
+            this.Logout.Size = new System.Drawing.Size(127, 24);
             this.Logout.Text = "LogOut";
             // 
             // guna2GradientButton1
@@ -333,7 +342,7 @@
             this.guna2GradientButton1.Animated = true;
             this.guna2GradientButton1.AutoRoundedCorners = true;
             this.guna2GradientButton1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 22;
+            this.guna2GradientButton1.BorderRadius = 28;
             this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -344,9 +353,10 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(68)))), ((int)(((byte)(24)))));
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(381, 455);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(508, 565);
+            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(183, 47);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(244, 58);
             this.guna2GradientButton1.TabIndex = 36;
             this.guna2GradientButton1.Text = "Retrieve Data";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click_1);
@@ -356,7 +366,7 @@
             this.guna2GradientButton3.Animated = true;
             this.guna2GradientButton3.AutoRoundedCorners = true;
             this.guna2GradientButton3.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton3.BorderRadius = 22;
+            this.guna2GradientButton3.BorderRadius = 28;
             this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -367,9 +377,10 @@
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(68)))), ((int)(((byte)(24)))));
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(889, 626);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(1185, 770);
+            this.guna2GradientButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(183, 47);
+            this.guna2GradientButton3.Size = new System.Drawing.Size(244, 58);
             this.guna2GradientButton3.TabIndex = 38;
             this.guna2GradientButton3.Text = "Delete Customer";
             this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
@@ -379,7 +390,7 @@
             this.guna2GradientButton4.Animated = true;
             this.guna2GradientButton4.AutoRoundedCorners = true;
             this.guna2GradientButton4.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton4.BorderRadius = 22;
+            this.guna2GradientButton4.BorderRadius = 28;
             this.guna2GradientButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -390,9 +401,10 @@
             this.guna2GradientButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(68)))), ((int)(((byte)(24)))));
             this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(543, 626);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(724, 770);
+            this.guna2GradientButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.Size = new System.Drawing.Size(183, 47);
+            this.guna2GradientButton4.Size = new System.Drawing.Size(244, 58);
             this.guna2GradientButton4.TabIndex = 39;
             this.guna2GradientButton4.Text = "Add Customer";
             this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
@@ -408,11 +420,12 @@
             this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(1293, 12);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(1724, 15);
+            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.PressedColor = System.Drawing.Color.Transparent;
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(33, 35);
+            this.guna2CircleButton1.Size = new System.Drawing.Size(44, 43);
             this.guna2CircleButton1.TabIndex = 40;
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
@@ -432,23 +445,23 @@
             this.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_search.IconLeft = ((System.Drawing.Image)(resources.GetObject("txt_search.IconLeft")));
             this.txt_search.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.txt_search.Location = new System.Drawing.Point(725, 455);
-            this.txt_search.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txt_search.Location = new System.Drawing.Point(967, 570);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txt_search.Name = "txt_search";
             this.txt_search.PasswordChar = '\0';
             this.txt_search.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_search.PlaceholderText = "search car name.";
             this.txt_search.SelectedText = "";
-            this.txt_search.Size = new System.Drawing.Size(499, 37);
+            this.txt_search.Size = new System.Drawing.Size(665, 46);
             this.txt_search.TabIndex = 41;
             this.txt_search.TextChanged += new System.EventHandler(this.search_guna_TextChanged);
             // 
             // Customer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1455, 791);
+            this.ClientSize = new System.Drawing.Size(1940, 974);
             this.Controls.Add(this.txt_search);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.guna2GradientButton4);
@@ -458,7 +471,7 @@
             this.Controls.Add(this.dgv_customer);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";

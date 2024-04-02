@@ -27,6 +27,7 @@ namespace Wheel_Deal
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            name_txt.Text = Global.CurrentName;
             if (con.State != ConnectionState.Open)
                 con.Open();
             try
@@ -95,19 +96,18 @@ namespace Wheel_Deal
             nform.Show();
         }
 
-        private void chart1_Click(object sender, EventArgs e)
+        private void guna2GradientButton12_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT Month, profits From test ", con);
-            da.Fill(dt);
-            Profit_Chart.DataSource = dt;
-            con.Close();
-            Profit_Chart.Series["profits"].XValueMember = "Month";
-            Profit_Chart.Series["profits"].YValueMembers = "Profits";
-            Profit_Chart.Titles.Add("Monthly Profits");
-        
-
-    }
+            if(Global.CurrentLogInType=="Admin")
+            {
+                employeeInfo employeeInfo = new employeeInfo();
+                this.Hide();
+                employeeInfo.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Function!");
+            }
+        }
     }
 }

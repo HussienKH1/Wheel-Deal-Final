@@ -36,13 +36,22 @@ namespace Wheel_Deal
                 adapter.Fill(dbt);
                 if (dbt.Rows.Count > 0)
                 {
-                    if (dbt.Rows[0][6].ToString() == "Admin" && String.Compare(Pass_txt.Text, dbt.Rows[0][5].ToString(), false) == 0)
+                    if (String.Compare(Pass_txt.Text, dbt.Rows[0][5].ToString(), false) == 0)
                     {
                         Global.CurrentUserName = dbt.Rows[0][4].ToString();
-                        Global.CurrentLogInType = "Admin";
+                        
+                        Global.CurrentName = dbt.Rows[0][1].ToString();
                         Admin objform2 = new Admin();
                         this.Hide();
                         objform2.Show();
+                        if(dbt.Rows[0][6].ToString() == "Admin")
+                        {
+                            Global.CurrentLogInType = "Admin";
+                        }
+                        else
+                        {
+                            Global.CurrentLogInType = "Employee";
+                        }
                     }
 
                     else
