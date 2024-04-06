@@ -27,43 +27,38 @@ namespace Wheel_Deal
 
         private void guna2GradientButton6_Click(object sender, EventArgs e)
         {
-            New_or_Old form = new New_or_Old();
+            Buy form = new Buy();
             form.ShowDialog();
         }
 
         private void guna2GradientButton7_Click(object sender, EventArgs e)
         {
-            New_or_Old form = new New_or_Old();
+            Buy form = new Buy();
             form.ShowDialog();
         }
 
         private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-            New_or_Old form = new New_or_Old();
+            Buy form = new Buy();
             form.ShowDialog();
         }
 
         private void guna2GradientButton5_Click(object sender, EventArgs e)
         {
-            New_or_Old form = new New_or_Old();
+            Rent1 form = new Rent1();
             form.ShowDialog();
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            New_or_Old form = new New_or_Old();
+            Rent1 form = new Rent1();
             form.ShowDialog();
         }
 
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
-        {
-            New_or_Old form = new New_or_Old();
-            form.ShowDialog();
-        }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            New_or_Old form = new New_or_Old();
+            Rent1 form = new Rent1();
             form.ShowDialog();
         }
 
@@ -100,7 +95,7 @@ namespace Wheel_Deal
 
         }
 
-        private void Cars_Load(object sender, EventArgs e)
+        public void loaddata()
         {
             try
             {
@@ -130,9 +125,19 @@ namespace Wheel_Deal
                     Rent1.Text = dt.Rows[0][7].ToString();
                     Rent2.Text = dt.Rows[3][7].ToString();
                     Rent3.Text = dt.Rows[4][7].ToString();
+                    Q1.Text = dt.Rows[2][11].ToString();
+                    Q2.Text = dt.Rows[1][11].ToString();
+                    Q3.Text = dt.Rows[0][11].ToString();
+                    Q4.Text = dt.Rows[4][11].ToString();
+                    Q5.Text = dt.Rows[3][11].ToString();
+                    Q6.Text = dt.Rows[5][11].ToString();
                 }
             }
             catch (Exception ex) { }
+        }
+        private void Cars_Load(object sender, EventArgs e)
+        {
+            loaddata();
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
@@ -179,6 +184,17 @@ namespace Wheel_Deal
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            menu1.Show(Addcar, 0, Addcar.Height);
+        }
+
+        private void menu1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            AddCars addCars = new AddCars();
+            addCars.Show();
         }
     }
 }

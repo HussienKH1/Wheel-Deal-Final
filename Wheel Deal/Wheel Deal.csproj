@@ -264,7 +264,6 @@
       <DependentUpon>employeeInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
-    <Compile Include="guna2ComboBox.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

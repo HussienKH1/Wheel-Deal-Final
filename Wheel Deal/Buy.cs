@@ -49,10 +49,11 @@ namespace Wheel_Deal
                     MessageBox.Show("Bought successfully");
                     if (con.State == ConnectionState.Open)
                         con.Close();
+
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Customer");
+                    MessageBox.Show("No Customer is available with this name");
                 }
             }
             catch (Exception ex)

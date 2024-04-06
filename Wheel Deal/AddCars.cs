@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Security.Cryptography;
 
 
 namespace Wheel_Deal
@@ -21,91 +22,45 @@ namespace Wheel_Deal
             InitializeComponent();
         }
 
-        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void city_text_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private byte[] getPhoto() 
-        {
-            MemoryStream stream = new MemoryStream();
-            imageAddCars.Image.Save(stream, imageAddCars.Image.RawFormat);
-            return stream.GetBuffer(); 
-        }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            int currentValue;
+            int CRID = getCarID();
             try
             {
                 if (con.State != ConnectionState.Open)
                     con.Open();
-                SqlCommand cmd = new SqlCommand("AddCar", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@CRID", CRID_text.Text);
-                cmd.Parameters.AddWithValue("@Brand", brand_text.Text);
-                cmd.Parameters.AddWithValue("@Color", Color_txt.Text);
-                cmd.Parameters.AddWithValue("@Speed", speed_txt.Text);
-                cmd.Parameters.AddWithValue("@Capacity", capacity_text.Text);
-                cmd.Parameters.AddWithValue("@Mileage", mileage_txt.Text);
-                cmd.Parameters.AddWithValue("@Engine", engine_txt.Text);
-                cmd.Parameters.AddWithValue("@Price", price_txt.Text);
-                cmd.Parameters.AddWithValue("@Type", type_txt.Text);
-                cmd.Parameters.AddWithValue("@Model", model_txt.Text);
-                cmd.Parameters.AddWithValue("@Image", getPhoto()); 
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Car added successfully");
-                if (con.State == ConnectionState.Open)
-                    con.Close();
+                if (CRID != -1)
+                {
+                    SqlCommand cmd1 = new SqlCommand("Select Quantity from Car Where CRID = @CRID ", con);
+                    cmd1.Parameters.AddWithValue("@CRID", CRID);
+                    currentValue = Convert.ToInt32(cmd1.ExecuteScalar());
+                    
 
+                    SqlCommand cmd = new SqlCommand("UPDATE Car SET Quantity = @quantity WHERE CRID = @CRID", con);
+                    cmd.Parameters.AddWithValue("@NewValue", Quantity.Text);
+                    cmd.Parameters.AddWithValue("@CRID", CRID);
+                    MessageBox.Show("Car(s) added successfully");
+                    if (con.State == ConnectionState.Open)
+                        con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("No Car found");
+                }
             }
-            catch
+            catch (Exception ex)
             {
                 MessageBox.Show("error!!!");
             }
+            Cars cars = new Cars();
+            this.Close();
+            cars.loaddata();
+            
         }
-        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void browse_btn_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if(openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-               imageAddCars.Image = new Bitmap(openFileDialog.FileName);
-            }
-        }
-
+        
         private void AddCars_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void imageAddCars_Click(object sender, EventArgs e)
         {
 
         }
@@ -113,6 +68,39 @@ namespace Wheel_Deal
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            int currentValue;
+            if (int.TryParse(Quantity.Text, out currentValue))
+            {
+                // Increment the value by 1 and update the textbox
+                Quantity.Text = (currentValue + 1).ToString();
+            }
+            else
+            {
+                // If parsing fails, set the textbox value to 1
+                Quantity.Text = "1";
+            }
+        }
+        private int getCarID()
+        {
+            int carid = -1;
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                SqlCommand cmd = new SqlCommand("Select CSID from Customer where Name like '" + Car.SelectedItem.ToString() + "'", con);
+
+                carid = Convert.ToInt32(cmd.ExecuteScalar());
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return carid;
         }
     }
 }

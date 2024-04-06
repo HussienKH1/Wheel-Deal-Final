@@ -26,30 +26,60 @@ namespace Wheel_Deal
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-
-            try
+            int customerid = getCustomerID();
+            int CRID=11;
+            int currentValue;
+            try 
             {
-                if (con.State != ConnectionState.Open)
-                    con.Open();
-                SqlCommand cmd = new SqlCommand("Rent", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@SSN", Int64.Parse(txt_SSN.Text));
-                cmd.Parameters.AddWithValue("@CRID", Int64.Parse(txt_CID.Text));
-                cmd.Parameters.AddWithValue("@RentID", Int64.Parse(txt_RID.Text));
-                cmd.Parameters.AddWithValue("@Startdate", picker_SD.Value);
-                cmd.Parameters.AddWithValue("@Enddate", picker_ED.Text);
-                cmd.Parameters.AddWithValue("@Price", txt_price.Text);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("rented");
-                if (con.State == ConnectionState.Open)
-                    con.Close();
+                if (customerid != -1)
+                {
+                    if (con.State != ConnectionState.Open)
+                        con.Open();
+                    SqlCommand cmd = new SqlCommand("Insert into Rentby values (@CRID, @RentID, @Startdate, @Enddate, @Price, @CSID)", con);
+                    cmd.Parameters.AddWithValue("@CSID", customerid);
+                    cmd.Parameters.AddWithValue("@CRID", CRID);
+                    cmd.Parameters.AddWithValue("@RentID", txt_RID.Text);
+                    cmd.Parameters.AddWithValue("@Startdate", picker_SD.Value);
+                    cmd.Parameters.AddWithValue("@Enddate", picker_ED.Value);
+                    cmd.Parameters.AddWithValue("@Price", txt_price.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Rented");
+                    if (con.State == ConnectionState.Open)
+                        con.Close();
+                    SqlCommand cmd1 = new SqlCommand("Select Quantity from Car where CRID = @CRID)", con);
+                    cmd1.Parameters.AddWithValue("@CRID", CRID);
+                    currentValue = Convert.ToInt32(cmd1.ExecuteScalar());
+                    currentValue -- ;
+                }
+                else
+                {
+                    MessageBox.Show("No Customer is available with this name.");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("error!!!");
             }
         }
+        private int getCustomerID()
+        {
+            int customerid = -1;
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                SqlCommand cmd = new SqlCommand("Select CSID from Customer where Name like '" + txt_CSID.Text.Trim() + "'", con);
 
- 
+                customerid = Convert.ToInt32(cmd.ExecuteScalar());
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return customerid;
+        }
+
+
     }
 }

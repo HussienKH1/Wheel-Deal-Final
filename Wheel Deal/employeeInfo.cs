@@ -132,7 +132,24 @@ namespace Wheel_Deal
 
         private void guna2GradientButton9_Click(object sender, EventArgs e)
         {
+            Admin admin = new Admin();
+            this.Hide();
+            admin.Show();
+      
+        }
 
+        private void guna2GradientButton11_Click(object sender, EventArgs e)
+        {
+            Customer customer = new Customer();
+            this.Hide();
+            customer.Show();
+        }
+
+        private void guna2GradientButton10_Click(object sender, EventArgs e)
+        {
+            Cars cars = new Cars();
+            this.Hide();
+            cars.Show();
         }
     }
 }
