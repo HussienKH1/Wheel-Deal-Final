@@ -33,11 +33,11 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.AddCar_button = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.Car = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Quantity = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.car = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -103,29 +103,6 @@
             this.AddCar_button.Text = "Update";
             this.AddCar_button.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // Car
-            // 
-            this.Car.BackColor = System.Drawing.Color.Transparent;
-            this.Car.BorderRadius = 15;
-            this.Car.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.Car.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Car.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Car.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Car.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Car.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.Car.ItemHeight = 30;
-            this.Car.Items.AddRange(new object[] {
-            "BMW X6",
-            "Mercedes-Benz",
-            "BMW M8",
-            "Rolls-Royce",
-            "Porsche",
-            "Mercedes-MayBach"});
-            this.Car.Location = new System.Drawing.Point(57, 182);
-            this.Car.Name = "Car";
-            this.Car.Size = new System.Drawing.Size(260, 36);
-            this.Car.TabIndex = 55;
-            // 
             // Quantity
             // 
             this.Quantity.BorderRadius = 15;
@@ -185,6 +162,26 @@
             this.guna2Button1.TabIndex = 59;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // car
+            // 
+            this.car.BorderRadius = 15;
+            this.car.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.car.DefaultText = "";
+            this.car.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.car.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.car.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.car.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.car.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.car.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.car.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.car.Location = new System.Drawing.Point(57, 186);
+            this.car.Name = "car";
+            this.car.PasswordChar = '\0';
+            this.car.PlaceholderText = "";
+            this.car.SelectedText = "";
+            this.car.Size = new System.Drawing.Size(266, 36);
+            this.car.TabIndex = 60;
+            // 
             // AddCars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,11 +189,11 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(820, 350);
+            this.Controls.Add(this.car);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.Quantity);
-            this.Controls.Add(this.Car);
             this.Controls.Add(this.AddCar_button);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2CirclePictureBox1);
@@ -220,10 +217,10 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2GradientButton AddCar_button;
-        private Guna.UI2.WinForms.Guna2ComboBox Car;
         private Guna.UI2.WinForms.Guna2TextBox Quantity;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2TextBox car;
     }
 }

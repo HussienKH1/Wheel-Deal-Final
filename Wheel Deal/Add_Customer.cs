@@ -16,7 +16,7 @@ namespace Wheel_Deal
     public partial class Add_Customer : Form
     {
 
-        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
 
         public Add_Customer()
         {

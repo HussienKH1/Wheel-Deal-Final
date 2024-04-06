@@ -14,7 +14,7 @@ namespace Wheel_Deal
     public partial class Customer : Form
     {
         Int64 id;
-        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
         public Customer()
         {
             InitializeComponent();
@@ -75,7 +75,7 @@ namespace Wheel_Deal
 
         private void Customer_Load(object sender, EventArgs e)
         {
-
+            name.Text = Global.CurrentName;
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -183,22 +183,30 @@ namespace Wheel_Deal
         {
             int rowIndex = dgv_customer.CurrentCell.RowIndex;
             dgv_customer.Rows.RemoveAt(rowIndex);
-            if (con.State != ConnectionState.Open)
-                con.Open();
-            try
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this Customer?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                try
+                {
 
-                SqlCommand cmd = new SqlCommand("Delete from Customer where CSID =' " + id + "'", con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Deleted Successfully!");
-                LoadData();
+                    SqlCommand cmd = new SqlCommand("Delete from Customer where CSID =' " + id + "'", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Deleted Successfully!");
+                    LoadData();
+                }
+                catch
+                {
+                    MessageBox.Show("Error");
+                }
+                if (con.State != ConnectionState.Closed)
+                    con.Close();
             }
-            catch
+            else
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Delete operation cancelled.", "Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (con.State != ConnectionState.Closed)
-                con.Close();
         }
 
         private void dgv_customer_CellClick(object sender, DataGridViewCellEventArgs e)

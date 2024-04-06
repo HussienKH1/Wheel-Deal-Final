@@ -16,7 +16,7 @@ namespace Wheel_Deal
 {
     public partial class AddCars : Form
     {
-        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
         public AddCars()
         {
             InitializeComponent();
@@ -26,29 +26,25 @@ namespace Wheel_Deal
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             int currentValue;
-            int CRID = getCarID();
+            
             try
             {
                 if (con.State != ConnectionState.Open)
                     con.Open();
-                if (CRID != -1)
-                {
                     SqlCommand cmd1 = new SqlCommand("Select Quantity from Car Where CRID = @CRID ", con);
-                    cmd1.Parameters.AddWithValue("@CRID", CRID);
+                    cmd1.Parameters.AddWithValue("@CRID", car.Text);
                     currentValue = Convert.ToInt32(cmd1.ExecuteScalar());
-                    
-
                     SqlCommand cmd = new SqlCommand("UPDATE Car SET Quantity = @quantity WHERE CRID = @CRID", con);
-                    cmd.Parameters.AddWithValue("@NewValue", Quantity.Text);
-                    cmd.Parameters.AddWithValue("@CRID", CRID);
+                    int newv = Convert.ToInt32(Quantity.Text);
+                    currentValue += newv;
+                    cmd.Parameters.AddWithValue("@quantity", currentValue);
+                    cmd.Parameters.AddWithValue("@CRID", car.Text);
+                    cmd.ExecuteNonQuery();
                     MessageBox.Show("Car(s) added successfully");
                     if (con.State == ConnectionState.Open)
                         con.Close();
-                }
-                else
-                {
-                    MessageBox.Show("No Car found");
-                }
+                
+           
             }
             catch (Exception ex)
             {
@@ -83,24 +79,6 @@ namespace Wheel_Deal
                 // If parsing fails, set the textbox value to 1
                 Quantity.Text = "1";
             }
-        }
-        private int getCarID()
-        {
-            int carid = -1;
-            try
-            {
-                if (con.State != ConnectionState.Open)
-                    con.Open();
-                SqlCommand cmd = new SqlCommand("Select CSID from Customer where Name like '" + Car.SelectedItem.ToString() + "'", con);
-
-                carid = Convert.ToInt32(cmd.ExecuteScalar());
-
-            }
-            catch (Exception ex)
-            {
-
-            }
-            return carid;
         }
     }
 }

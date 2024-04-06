@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cars));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.WELCOME = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LOG_OUT = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
@@ -40,6 +40,7 @@
             this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Q1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BUY1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.model1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Buy_1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -48,6 +49,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Q2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BUY2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.model2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Buy_2 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -56,6 +58,7 @@
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Q3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Rent1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.model3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Rent_1 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -64,6 +67,7 @@
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Q4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Rent2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.model4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Rent_2 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -73,6 +77,7 @@
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Q5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Rent3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.model5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Rent_3 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -81,6 +86,7 @@
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel15 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Q6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BUY4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.model6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Buy_3 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -89,18 +95,11 @@
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.search_guna = new Guna.UI2.WinForms.Guna2TextBox();
             this.menu = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.logout = new System.Windows.Forms.ToolStripMenuItem();
             this.Addcar = new Guna.UI2.WinForms.Guna2ImageButton();
             this.menu1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.Add_Car = new System.Windows.Forms.ToolStripMenuItem();
-            this.Q1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Q2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Q3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Q4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Q5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Q6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -131,7 +130,7 @@
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton12);
-            this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2GradientPanel1.Controls.Add(this.name);
             this.guna2GradientPanel1.Controls.Add(this.WELCOME);
             this.guna2GradientPanel1.Controls.Add(this.LOG_OUT);
             this.guna2GradientPanel1.Controls.Add(this.guna2Panel19);
@@ -170,16 +169,16 @@
             this.guna2GradientButton12.TabIndex = 34;
             this.guna2GradientButton12.Text = "Employee";
             // 
-            // guna2HtmlLabel1
+            // name
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sitka Text Semibold", 12F);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 845);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 25);
-            this.guna2HtmlLabel1.TabIndex = 33;
-            this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
+            this.name.BackColor = System.Drawing.Color.Transparent;
+            this.name.Font = new System.Drawing.Font("Sitka Text Semibold", 12F);
+            this.name.ForeColor = System.Drawing.Color.White;
+            this.name.Location = new System.Drawing.Point(12, 845);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(138, 25);
+            this.name.TabIndex = 33;
+            this.name.Text = "guna2HtmlLabel1";
             // 
             // WELCOME
             // 
@@ -266,6 +265,7 @@
             this.guna2GradientButton10.Size = new System.Drawing.Size(232, 45);
             this.guna2GradientButton10.TabIndex = 2;
             this.guna2GradientButton10.Text = "Cars";
+            this.guna2GradientButton10.Click += new System.EventHandler(this.guna2GradientButton10_Click);
             // 
             // guna2GradientButton9
             // 
@@ -317,6 +317,16 @@
             this.guna2Panel1.Size = new System.Drawing.Size(387, 378);
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // Q1
+            // 
+            this.Q1.BackColor = System.Drawing.Color.Transparent;
+            this.Q1.ForeColor = System.Drawing.Color.White;
+            this.Q1.Location = new System.Drawing.Point(32, 256);
+            this.Q1.Name = "Q1";
+            this.Q1.Size = new System.Drawing.Size(86, 15);
+            this.Q1.TabIndex = 12;
+            this.Q1.Text = "guna2HtmlLabel2";
             // 
             // BUY1
             // 
@@ -421,6 +431,16 @@
             this.guna2Panel4.TabIndex = 1;
             this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
+            // Q2
+            // 
+            this.Q2.BackColor = System.Drawing.Color.Transparent;
+            this.Q2.ForeColor = System.Drawing.Color.White;
+            this.Q2.Location = new System.Drawing.Point(25, 256);
+            this.Q2.Name = "Q2";
+            this.Q2.Size = new System.Drawing.Size(86, 15);
+            this.Q2.TabIndex = 13;
+            this.Q2.Text = "guna2HtmlLabel3";
+            // 
             // BUY2
             // 
             this.BUY2.BackColor = System.Drawing.Color.Transparent;
@@ -523,6 +543,16 @@
             this.guna2Panel7.TabIndex = 1;
             this.guna2Panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
+            // Q3
+            // 
+            this.Q3.BackColor = System.Drawing.Color.Transparent;
+            this.Q3.ForeColor = System.Drawing.Color.White;
+            this.Q3.Location = new System.Drawing.Point(42, 256);
+            this.Q3.Name = "Q3";
+            this.Q3.Size = new System.Drawing.Size(86, 15);
+            this.Q3.TabIndex = 32;
+            this.Q3.Text = "guna2HtmlLabel4";
+            // 
             // Rent1
             // 
             this.Rent1.BackColor = System.Drawing.Color.Transparent;
@@ -624,6 +654,16 @@
             this.guna2Panel10.Size = new System.Drawing.Size(387, 378);
             this.guna2Panel10.TabIndex = 1;
             this.guna2Panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // Q4
+            // 
+            this.Q4.BackColor = System.Drawing.Color.Transparent;
+            this.Q4.ForeColor = System.Drawing.Color.White;
+            this.Q4.Location = new System.Drawing.Point(53, 259);
+            this.Q4.Name = "Q4";
+            this.Q4.Size = new System.Drawing.Size(86, 15);
+            this.Q4.TabIndex = 33;
+            this.Q4.Text = "guna2HtmlLabel5";
             // 
             // Rent2
             // 
@@ -735,6 +775,16 @@
             this.guna2Panel13.TabIndex = 1;
             this.guna2Panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
+            // Q5
+            // 
+            this.Q5.BackColor = System.Drawing.Color.Transparent;
+            this.Q5.ForeColor = System.Drawing.Color.White;
+            this.Q5.Location = new System.Drawing.Point(50, 259);
+            this.Q5.Name = "Q5";
+            this.Q5.Size = new System.Drawing.Size(86, 15);
+            this.Q5.TabIndex = 34;
+            this.Q5.Text = "guna2HtmlLabel6";
+            // 
             // Rent3
             // 
             this.Rent3.BackColor = System.Drawing.Color.Transparent;
@@ -835,6 +885,16 @@
             this.guna2Panel16.Size = new System.Drawing.Size(360, 378);
             this.guna2Panel16.TabIndex = 1;
             this.guna2Panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // Q6
+            // 
+            this.Q6.BackColor = System.Drawing.Color.Transparent;
+            this.Q6.ForeColor = System.Drawing.Color.White;
+            this.Q6.Location = new System.Drawing.Point(42, 259);
+            this.Q6.Name = "Q6";
+            this.Q6.Size = new System.Drawing.Size(86, 15);
+            this.Q6.TabIndex = 35;
+            this.Q6.Text = "guna2HtmlLabel7";
             // 
             // BUY4
             // 
@@ -937,33 +997,6 @@
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
-            // search_guna
-            // 
-            this.search_guna.BorderRadius = 20;
-            this.search_guna.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.search_guna.DefaultText = "";
-            this.search_guna.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.search_guna.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.search_guna.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search_guna.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search_guna.FillColor = System.Drawing.Color.Transparent;
-            this.search_guna.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_guna.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.search_guna.ForeColor = System.Drawing.Color.White;
-            this.search_guna.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_guna.IconLeft = ((System.Drawing.Image)(resources.GetObject("search_guna.IconLeft")));
-            this.search_guna.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.search_guna.Location = new System.Drawing.Point(257, 41);
-            this.search_guna.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.search_guna.Name = "search_guna";
-            this.search_guna.PasswordChar = '\0';
-            this.search_guna.PlaceholderForeColor = System.Drawing.Color.White;
-            this.search_guna.PlaceholderText = "search car name.";
-            this.search_guna.SelectedText = "";
-            this.search_guna.Size = new System.Drawing.Size(550, 37);
-            this.search_guna.TabIndex = 30;
-            this.search_guna.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
-            // 
             // menu
             // 
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -997,7 +1030,7 @@
             this.Addcar.ImageOffset = new System.Drawing.Point(0, 0);
             this.Addcar.ImageRotate = 0F;
             this.Addcar.ImageSize = new System.Drawing.Size(30, 30);
-            this.Addcar.Location = new System.Drawing.Point(1329, 11);
+            this.Addcar.Location = new System.Drawing.Point(1334, 11);
             this.Addcar.Margin = new System.Windows.Forms.Padding(2);
             this.Addcar.Name = "Addcar";
             this.Addcar.PressedState.ImageSize = new System.Drawing.Size(30, 30);
@@ -1028,74 +1061,13 @@
             this.Add_Car.Size = new System.Drawing.Size(117, 22);
             this.Add_Car.Text = "Add Car";
             // 
-            // Q1
-            // 
-            this.Q1.BackColor = System.Drawing.Color.Transparent;
-            this.Q1.ForeColor = System.Drawing.Color.White;
-            this.Q1.Location = new System.Drawing.Point(32, 256);
-            this.Q1.Name = "Q1";
-            this.Q1.Size = new System.Drawing.Size(86, 15);
-            this.Q1.TabIndex = 12;
-            this.Q1.Text = "guna2HtmlLabel2";
-            // 
-            // Q2
-            // 
-            this.Q2.BackColor = System.Drawing.Color.Transparent;
-            this.Q2.ForeColor = System.Drawing.Color.White;
-            this.Q2.Location = new System.Drawing.Point(25, 256);
-            this.Q2.Name = "Q2";
-            this.Q2.Size = new System.Drawing.Size(86, 15);
-            this.Q2.TabIndex = 13;
-            this.Q2.Text = "guna2HtmlLabel3";
-            // 
-            // Q3
-            // 
-            this.Q3.BackColor = System.Drawing.Color.Transparent;
-            this.Q3.ForeColor = System.Drawing.Color.White;
-            this.Q3.Location = new System.Drawing.Point(42, 256);
-            this.Q3.Name = "Q3";
-            this.Q3.Size = new System.Drawing.Size(86, 15);
-            this.Q3.TabIndex = 32;
-            this.Q3.Text = "guna2HtmlLabel4";
-            // 
-            // Q4
-            // 
-            this.Q4.BackColor = System.Drawing.Color.Transparent;
-            this.Q4.ForeColor = System.Drawing.Color.White;
-            this.Q4.Location = new System.Drawing.Point(53, 259);
-            this.Q4.Name = "Q4";
-            this.Q4.Size = new System.Drawing.Size(86, 15);
-            this.Q4.TabIndex = 33;
-            this.Q4.Text = "guna2HtmlLabel5";
-            // 
-            // Q5
-            // 
-            this.Q5.BackColor = System.Drawing.Color.Transparent;
-            this.Q5.ForeColor = System.Drawing.Color.White;
-            this.Q5.Location = new System.Drawing.Point(50, 259);
-            this.Q5.Name = "Q5";
-            this.Q5.Size = new System.Drawing.Size(86, 15);
-            this.Q5.TabIndex = 34;
-            this.Q5.Text = "guna2HtmlLabel6";
-            // 
-            // Q6
-            // 
-            this.Q6.BackColor = System.Drawing.Color.Transparent;
-            this.Q6.ForeColor = System.Drawing.Color.White;
-            this.Q6.Location = new System.Drawing.Point(42, 259);
-            this.Q6.Name = "Q6";
-            this.Q6.Size = new System.Drawing.Size(86, 15);
-            this.Q6.TabIndex = 35;
-            this.Q6.Text = "guna2HtmlLabel7";
-            // 
             // Cars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1455, 894);
+            this.ClientSize = new System.Drawing.Size(1462, 894);
             this.Controls.Add(this.Addcar);
-            this.Controls.Add(this.search_guna);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2Panel7);
             this.Controls.Add(this.guna2Panel4);
@@ -1189,7 +1161,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton11;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton10;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox search_guna;
         private Guna.UI2.WinForms.Guna2HtmlLabel model1;
         private Guna.UI2.WinForms.Guna2HtmlLabel model2;
         private Guna.UI2.WinForms.Guna2HtmlLabel model3;
@@ -1207,7 +1178,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel WELCOME;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem logout;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel name;
         private Guna.UI2.WinForms.Guna2ImageButton Addcar;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip menu1;
         private System.Windows.Forms.ToolStripMenuItem Add_Car;

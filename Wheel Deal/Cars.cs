@@ -14,7 +14,7 @@ namespace Wheel_Deal
 {
     public partial class Cars : Form
     {
-        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
         public Cars()
         {
             InitializeComponent();
@@ -64,8 +64,6 @@ namespace Wheel_Deal
 
         private void guna2GradientButton8_Click(object sender, EventArgs e)
         {
-            New_or_Old form = new New_or_Old();
-            form.ShowDialog();
         }
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
@@ -75,19 +73,7 @@ namespace Wheel_Deal
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("Select * from cars where Name like '%" +search_guna+ "%'", con);
-            con.Open();
-            try
-            {
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dbt = new DataTable();
-                adapter.Fill(dbt);
-                con.Close();
-
-            }
-            catch (Exception ex) {
-                
-            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -138,6 +124,7 @@ namespace Wheel_Deal
         private void Cars_Load(object sender, EventArgs e)
         {
             loaddata();
+            name.Text = Global.CurrentName;
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
@@ -195,6 +182,11 @@ namespace Wheel_Deal
         {
             AddCars addCars = new AddCars();
             addCars.Show();
+        }
+
+        private void guna2GradientButton10_Click(object sender, EventArgs e)
+        {
+            loaddata();
         }
     }
 }

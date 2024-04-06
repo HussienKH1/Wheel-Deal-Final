@@ -12,7 +12,8 @@ using System.Data.SqlClient;
 namespace Wheel_Deal
 {
     public partial class Employee : Form
-    {  SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+    {
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
         public Employee()
         {
             InitializeComponent();
@@ -168,6 +169,11 @@ namespace Wheel_Deal
         private void guna2HtmlLabel7_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2CirclePictureBox1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

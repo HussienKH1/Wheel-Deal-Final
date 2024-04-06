@@ -14,7 +14,7 @@ namespace Wheel_Deal
     public partial class employeeInfo : Form
     {
         Int64 id;
-        SqlConnection con =new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
         public employeeInfo()
         {
             InitializeComponent();
@@ -104,24 +104,32 @@ namespace Wheel_Deal
         }
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
-            int rowIndex = employeeDGV.CurrentCell.RowIndex;
-            employeeDGV.Rows.RemoveAt(rowIndex);
-            if (con.State != ConnectionState.Open)
-                con.Open();
-            try
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this employee?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
+                int rowIndex = employeeDGV.CurrentCell.RowIndex;
+                employeeDGV.Rows.RemoveAt(rowIndex);
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                try
+                {
 
-                SqlCommand cmd = new SqlCommand("Delete from person where SSN =' " + id + "'", con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Deleted Successfully!");
-                LoadData();
+                    SqlCommand cmd = new SqlCommand("Delete from person where SSN =' " + id + "'", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Deleted Successfully!");
+                    LoadData();
+                }
+                catch
+                {
+                    MessageBox.Show("Error");
+                }
+                if (con.State != ConnectionState.Closed)
+                    con.Close();
             }
-            catch
+            else
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Delete operation cancelled.", "Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (con.State != ConnectionState.Closed)
-                con.Close();
         }
 
         private void employeeDGV_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -150,6 +158,11 @@ namespace Wheel_Deal
             Cars cars = new Cars();
             this.Hide();
             cars.Show();
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Wheel_Deal
 {
     public partial class Rent1 : Form
     {
-        SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\source\repos\Wheel Deal\Wheel Deal\myDB.mdf"";Integrated Security=True");
         public Rent1()
         {
             InitializeComponent();
@@ -43,13 +43,17 @@ namespace Wheel_Deal
                     cmd.Parameters.AddWithValue("@Enddate", picker_ED.Value);
                     cmd.Parameters.AddWithValue("@Price", txt_price.Text);
                     cmd.ExecuteNonQuery();
+                    SqlCommand cmd1 = new SqlCommand("Select Quantity from Car where CRID = @CRID", con);
+                    cmd1.Parameters.AddWithValue("@CRID", CRID);
+                    currentValue = Convert.ToInt32(cmd1.ExecuteScalar());
+                    currentValue--;
+                    SqlCommand cmd2 = new SqlCommand("UPDATE Car SET Quantity = @quantity WHERE CRID = @CRID", con);
+                    cmd2.Parameters.AddWithValue("@quantity", currentValue);
+                    cmd2.Parameters.AddWithValue("@CRID", CRID);
+                    cmd2.ExecuteNonQuery();
                     MessageBox.Show("Rented");
                     if (con.State == ConnectionState.Open)
                         con.Close();
-                    SqlCommand cmd1 = new SqlCommand("Select Quantity from Car where CRID = @CRID)", con);
-                    cmd1.Parameters.AddWithValue("@CRID", CRID);
-                    currentValue = Convert.ToInt32(cmd1.ExecuteScalar());
-                    currentValue -- ;
                 }
                 else
                 {
